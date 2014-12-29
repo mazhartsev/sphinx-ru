@@ -2,6 +2,8 @@
    :description: reStructuredText, Python Sphinx, Git, GitHub, Read the Docs
    :keywords: plaintext, markup language
 
+.. meta::
+   :http-equiv=Content-Type: text/html; charset=utf-8
 
 .. _my-reference-label:
  
