@@ -311,7 +311,7 @@ make html
 <div class="section" id="ext-math-label">
 <span id="id15"></span><h3>Режим отображения формул<a class="headerlink" href="#ext-math-label" title="Permalink to this headline">¶</a></h3>
 <p>Формулы в Sphinx могут отображаться с помощью одного из двух расширений: <tt class="docutils literal"><span class="pre">sphinx.ext.pngmath</span></tt> или <tt class="docutils literal"><span class="pre">sphinx.ext.mathjax</span></tt>. Первое расширение отображает формулы как изображения в png формате. Другое расширение использует JavaScript библиотеку <tt class="docutils literal"><span class="pre">mathjax</span></tt> для отображения формул.</p>
-<p>Я предпочитаю использовать <tt class="docutils literal"><span class="pre">sphinx.ext.mathjax</span></tt>, так как оно позволяет масштабировать формулы без потери качества отображения.</p>
+<p>Я предпочитаю использовать <tt class="docutils literal"><span class="pre">sphinx.ext.mathjax</span></tt>, так как оно позволяет масштабировать формулы без потери качества отображения. Но для сервиса Read The Docs нужно использовать <tt class="docutils literal"><span class="pre">sphinx.ext.pngmath</span></tt>.</p>
 <p>Указать Sphinx какое расширение использовать можно в конфигурационном файле <tt class="docutils literal"><span class="pre">conf.py</span></tt>, в строке <tt class="docutils literal"><span class="pre">extensions</span></tt>.</p>
 <div class="highlight-python"><div class="highlight"><pre> extensions = [
  &#39;sphinx.ext.mathjax&#39;,
