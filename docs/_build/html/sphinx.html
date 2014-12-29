@@ -241,8 +241,8 @@ make html
 </div>
 <p>Подробнее смотрите раздел <a class="reference internal" href="rst-markup.html#img-label"><em>Изображения и иллюстрации</em></a>.</p>
 </div>
-<div class="section" id="id8">
-<h3>Автоматическая сборка<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="sphinx-autobuild">
+<span id="id8"></span><h3>Автоматическая сборка<a class="headerlink" href="#sphinx-autobuild" title="Permalink to this headline">¶</a></h3>
 <p>Для автоматической сборки документации используйте <a class="reference external" href="https://pypi.python.org/pypi/sphinx-autobuild/0.2.3">sphinx-autobuild</a>.</p>
 <p>Для установки выполните команду:</p>
 <div class="highlight-python"><div class="highlight"><pre>pip install https://github.com/lepture/python-livereload/archive/master.zip
@@ -271,15 +271,15 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 </div>
 <hr class="docutils" />
-<div class="section" id="id10">
-<h2>Файл конфигурации<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h2>Файл конфигурации<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p>Все настройки сборки документации находятся в файле <tt class="docutils literal"><span class="pre">conf.py</span></tt> в корне проекта Sphinx.</p>
 </div>
-<div class="section" id="id11">
-<h2>Общие настройки<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
-<p>Общие настройки задаются в разделе <tt class="docutils literal"><span class="pre">General</span> <span class="pre">configuration</span></tt> файла <tt class="docutils literal"><span class="pre">conf.py</span></tt>.</p>
 <div class="section" id="id12">
-<h3>Изменение названия и копирайта<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<h2>Общие настройки<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p>Общие настройки задаются в разделе <tt class="docutils literal"><span class="pre">General</span> <span class="pre">configuration</span></tt> файла <tt class="docutils literal"><span class="pre">conf.py</span></tt>.</p>
+<div class="section" id="id13">
+<h3>Изменение названия и копирайта<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># General information about the project.</span>
 <span class="n">project</span> <span class="o">=</span> <span class="s">&#39;Sphinx-ru&#39;</span>
 <span class="n">copyright</span> <span class="o">=</span> <span class="s">&#39;2014, Dmitry Mazhartsev&#39;</span>
@@ -295,7 +295,7 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 </div>
 <div class="section" id="versions-conf">
-<span id="id13"></span><h3>Версии публикации<a class="headerlink" href="#versions-conf" title="Permalink to this headline">¶</a></h3>
+<span id="id14"></span><h3>Версии публикации<a class="headerlink" href="#versions-conf" title="Permalink to this headline">¶</a></h3>
 <p>Изменить параметры <tt class="docutils literal"><span class="pre">version</span></tt> и <tt class="docutils literal"><span class="pre">release</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># The short X.Y version.</span>
 <span class="n">version</span> <span class="o">=</span> <span class="s">&#39;1&#39;</span>
@@ -305,7 +305,7 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 </div>
 <div class="section" id="lang-conf">
-<span id="id14"></span><h3>Настройка локализации<a class="headerlink" href="#lang-conf" title="Permalink to this headline">¶</a></h3>
+<span id="id15"></span><h3>Настройка локализации<a class="headerlink" href="#lang-conf" title="Permalink to this headline">¶</a></h3>
 <p>Многие шаблоны тем имеют несколько локализаций, в зависимости от этого некоторые элементы оформления могут быть автоматически локализованы, например, заголовки блоков предупреждений меняются в зависимости от языка.</p>
 <p>Настройки языка задаются в разделе <tt class="docutils literal"><span class="pre">General</span> <span class="pre">configuration</span></tt> файла <tt class="docutils literal"><span class="pre">conf.py</span></tt> в строке <tt class="docutils literal"><span class="pre">language</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">language</span> <span class="o">=</span> <span class="s">&#39;ru&#39;</span>
@@ -317,7 +317,7 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 </div>
 <div class="section" id="date-conf">
-<span id="id15"></span><h3>Настройка отображения даты<a class="headerlink" href="#date-conf" title="Permalink to this headline">¶</a></h3>
+<span id="id16"></span><h3>Настройка отображения даты<a class="headerlink" href="#date-conf" title="Permalink to this headline">¶</a></h3>
 <p>Формат отображения даты зависит от выбранного языка (см. <a class="reference internal" href="#lang-conf"><em>Настройка локализации</em></a>). Но можно задать и собственный формат.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">today</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
 <span class="n">today_fmt</span> <span class="o">=</span> <span class="s">&#39;%B </span><span class="si">%d</span><span class="s">, %Y&#39;</span>
@@ -326,7 +326,7 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 <p>Из этих настроек берется  информация для автозамены <tt class="docutils literal"><span class="pre">|today|</span></tt> (см. <a class="reference internal" href="sphinx-markup.html#today-label"><em>Автозамены Sphinx (Подстановки)</em></a>).</p>
 </div>
 <div class="section" id="ext-label">
-<span id="id16"></span><h3>Подключение расширений<a class="headerlink" href="#ext-label" title="Permalink to this headline">¶</a></h3>
+<span id="id17"></span><h3>Подключение расширений<a class="headerlink" href="#ext-label" title="Permalink to this headline">¶</a></h3>
 <p>Список расширений для Sphinx приведен на странице <a class="reference external" href="http://sphinx-doc.org/latest/extensions.html">Sphinx Extensions</a> официальной документации.</p>
 <p>Подключаемые расширения прописываются в файле <tt class="docutils literal"><span class="pre">conf.py</span></tt>, в строке <tt class="docutils literal"><span class="pre">extensions</span></tt>.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
@@ -337,7 +337,7 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 </div>
 <div class="section" id="ext-math-label">
-<span id="id17"></span><h3>Режим отображения формул<a class="headerlink" href="#ext-math-label" title="Permalink to this headline">¶</a></h3>
+<span id="id18"></span><h3>Режим отображения формул<a class="headerlink" href="#ext-math-label" title="Permalink to this headline">¶</a></h3>
 <p>Формулы в Sphinx могут отображаться с помощью одного из двух расширений: <tt class="docutils literal"><span class="pre">sphinx.ext.pngmath</span></tt> или <tt class="docutils literal"><span class="pre">sphinx.ext.mathjax</span></tt>. Первое расширение отображает формулы как изображения в png формате. Другое расширение использует JavaScript библиотеку <tt class="docutils literal"><span class="pre">mathjax</span></tt> для отображения формул.</p>
 <p>Я предпочитаю использовать <tt class="docutils literal"><span class="pre">sphinx.ext.mathjax</span></tt>, так как оно позволяет масштабировать формулы без потери качества отображения. Но для сервиса Read The Docs нужно использовать <tt class="docutils literal"><span class="pre">sphinx.ext.pngmath</span></tt>.</p>
 <p>Указать Sphinx какое расширение использовать можно в конфигурационном файле <tt class="docutils literal"><span class="pre">conf.py</span></tt>, в строке <tt class="docutils literal"><span class="pre">extensions</span></tt>.</p>
@@ -374,7 +374,7 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 <p>Имеется возможность добавлять метаданные каждой из страниц. Это не относится к настройкам файла <tt class="docutils literal"><span class="pre">conf.py</span></tt>, а добавляется непосредственно в rst файлы  с помощью директивы <tt class="docutils literal"><span class="pre">..</span> <span class="pre">meta::</span></tt>. Подробнее смотрите раздел <a class="reference internal" href="rst-markup.html#meta-label"><em>Метаданные. Тег META</em></a>.</p>
 </div>
 <div class="section" id="html-theme-label">
-<span id="id18"></span><h3>Смена HTML-темы<a class="headerlink" href="#html-theme-label" title="Permalink to this headline">¶</a></h3>
+<span id="id19"></span><h3>Смена HTML-темы<a class="headerlink" href="#html-theme-label" title="Permalink to this headline">¶</a></h3>
 <p>В строке <tt class="docutils literal"><span class="pre">html_theme</span></tt> указать название используемой темы:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">html_theme</span> <span class="o">=</span> <span class="s">&#39;sphinx_rtd_theme&#39;</span>
 </pre></div>
@@ -396,7 +396,7 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 <h2>Генерация в формат LaTeX<a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h2>
 <p>Настройки генерации в формат LaTeX задаются в разделе <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">LaTeX</span> <span class="pre">output</span></tt> файла <tt class="docutils literal"><span class="pre">conf.py</span></tt>.</p>
 <div class="section" id="ltx-label">
-<span id="id19"></span><h3>Преамбула<a class="headerlink" href="#ltx-label" title="Permalink to this headline">¶</a></h3>
+<span id="id20"></span><h3>Преамбула<a class="headerlink" href="#ltx-label" title="Permalink to this headline">¶</a></h3>
 <p>В файле <tt class="docutils literal"><span class="pre">conf.py</span></tt> можно указать дополнительные параметры преамбулы:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Additional stuff for the LaTeX preamble.</span>
 <span class="s">&#39;preamble&#39;</span><span class="p">:</span> <span class="s">&#39;</span><span class="se">\\</span><span class="s">usepackage[utf8]{inputenc}&#39;</span><span class="p">,</span>
@@ -408,12 +408,12 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </pre></div>
 </div>
 </div>
-<div class="section" id="id20">
-<h3>Язык и кодировка<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id21">
+<h3>Язык и кодировка<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
 <p>Для корректной генерации в  формат LaTeX кириллических документов необходимо указать в файле <tt class="docutils literal"><span class="pre">conf.py</span></tt>  дополнительные параметры преамбулы, смотрите пример в разделе <a class="reference internal" href="#ltx-label"><em>Преамбула</em></a>.</p>
 </div>
-<div class="section" id="id21">
-<h3>Уровни заголовков в содержании<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id22">
+<h3>Уровни заголовков в содержании<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
 <p>Параметр <tt class="docutils literal"><span class="pre">:maxdepth:</span></tt> не распространяется на LaTeX-документы. Глубина оглавления в LaTeX контролируется его внутренним счетчиком, который можно настроить в файле конфигурации Sphinx <tt class="docutils literal"><span class="pre">conf.py</span></tt>, указав в преамбуле значение <tt class="docutils literal"><span class="pre">\setcounter{tocdepth}{2}</span></tt>.</p>
 </div>
 </div>
@@ -421,15 +421,15 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 <div class="section" id="epub">
 <h2>Генерация в формат ePub<a class="headerlink" href="#epub" title="Permalink to this headline">¶</a></h2>
 <p>Для генерации в формат ePub используются настройки <tt class="docutils literal"><span class="pre">conf.py</span></tt> в разделе <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Epub</span> <span class="pre">output</span></tt>. Также частично используются настройки из раздела генерации в HTML <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">HTML</span> <span class="pre">output</span></tt>.</p>
-<div class="section" id="id22">
-<h3>Настройка языка<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id23">
+<h3>Настройка языка<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
 <p>Для корректной генерации ePub в разделе <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Epub</span> <span class="pre">output</span></tt> файла <tt class="docutils literal"><span class="pre">conf.py</span></tt> есть строка <tt class="docutils literal"><span class="pre">epub_language</span></tt> :</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">epub_language</span> <span class="o">=</span> <span class="s">&#39;ru</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id23">
-<h3>Отключение копирайта<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id24">
+<h3>Отключение копирайта<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
 <p>В разделе <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">HTML</span> <span class="pre">output</span></tt> раскомментировать и установить значение <tt class="docutils literal"><span class="pre">False</span></tt> строке <tt class="docutils literal"><span class="pre">html_show_copyright</span></tt></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># If true, &quot;(C) Copyright ...&quot; is shown in the HTML footer.</span>
 <span class="c"># Default is True.</span>
@@ -456,16 +456,16 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </pre></div>
 </div>
 </div>
-<div class="section" id="id24">
-<h3>Настройка глубины содержания<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id25">
+<h3>Настройка глубины содержания<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
 <p>Раскомментировать и установить нужное значение. По умолчанию в оглавление входят заголовки глубиной до 3-х уровней:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># The depth of the table of contents in toc.ncx.</span>
 <span class="n">epub_tocdepth</span> <span class="o">=</span> <span class="mi">3</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id25">
-<h3>Настройка названия и заголовка<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id26">
+<h3>Настройка названия и заголовка<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Bibliographic Dublin Core info.</span>
 <span class="n">epub_title</span> <span class="o">=</span> <span class="s">&#39;Sphinx-ru&#39;</span>
 <span class="n">epub_author</span> <span class="o">=</span> <span class="s">&#39;Dmitry Mazhartsev&#39;</span>
@@ -493,12 +493,12 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 <li><a class="reference internal" href="#index">Файл index</a></li>
 <li><a class="reference internal" href="#id6">Генерация документа</a></li>
 <li><a class="reference internal" href="#id7">Добавление иллюстраций</a></li>
-<li><a class="reference internal" href="#id8">Автоматическая сборка</a></li>
+<li><a class="reference internal" href="#sphinx-autobuild">Автоматическая сборка</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id10">Файл конфигурации</a></li>
-<li><a class="reference internal" href="#id11">Общие настройки</a><ul>
-<li><a class="reference internal" href="#id12">Изменение названия и копирайта</a></li>
+<li><a class="reference internal" href="#id11">Файл конфигурации</a></li>
+<li><a class="reference internal" href="#id12">Общие настройки</a><ul>
+<li><a class="reference internal" href="#id13">Изменение названия и копирайта</a></li>
 <li><a class="reference internal" href="#unicode">Строки Unicode</a></li>
 <li><a class="reference internal" href="#versions-conf">Версии публикации</a></li>
 <li><a class="reference internal" href="#lang-conf">Настройка локализации</a></li>
@@ -515,17 +515,17 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </li>
 <li><a class="reference internal" href="#latex">Генерация в формат LaTeX</a><ul>
 <li><a class="reference internal" href="#ltx-label">Преамбула</a></li>
-<li><a class="reference internal" href="#id20">Язык и кодировка</a></li>
-<li><a class="reference internal" href="#id21">Уровни заголовков в содержании</a></li>
+<li><a class="reference internal" href="#id21">Язык и кодировка</a></li>
+<li><a class="reference internal" href="#id22">Уровни заголовков в содержании</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#epub">Генерация в формат ePub</a><ul>
-<li><a class="reference internal" href="#id22">Настройка языка</a></li>
-<li><a class="reference internal" href="#id23">Отключение копирайта</a></li>
+<li><a class="reference internal" href="#id23">Настройка языка</a></li>
+<li><a class="reference internal" href="#id24">Отключение копирайта</a></li>
 <li><a class="reference internal" href="#created-using-sphinx">Отключение надписи &#8220;Created using Sphinx&#8221;</a></li>
 <li><a class="reference internal" href="#url">Настройка отображения URL-адресов</a></li>
-<li><a class="reference internal" href="#id24">Настройка глубины содержания</a></li>
-<li><a class="reference internal" href="#id25">Настройка названия и заголовка</a></li>
+<li><a class="reference internal" href="#id25">Настройка глубины содержания</a></li>
+<li><a class="reference internal" href="#id26">Настройка названия и заголовка</a></li>
 </ul>
 </li>
 </ul>
