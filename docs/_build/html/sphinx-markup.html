@@ -24,7 +24,6 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="Генератор документации Sphinx 1.0 documentation" href="index.html" />
     <link rel="next" title="Система управления версиями Git" href="git.html" />
     <link rel="prev" title="Стандартный синтаксис разметки reStructuredText" href="rst-markup.html" /> 
@@ -138,7 +137,7 @@
 <div class="highlight-python"><div class="highlight"><pre>Формула в предложении :math:`a^2 + b^2 = c^2`.
 </pre></div>
 </div>
-<p>Формула в предложении <span class="math">\(a^2 + b^2 = c^2\)</span>.</p>
+<p>Формула в предложении <img class="math" src="_images/math/09356683b42bdf935997256ed26096e035f482e0.png" alt="a^2 + b^2 = c^2"/>.</p>
 <p>Выравнивание формул относительно знака равно осуществляется с помощью знака <tt class="docutils literal"><span class="pre">&amp;</span></tt>. Перенос  строк с помощью <tt class="docutils literal"><span class="pre">\\</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre> .. math::
 
@@ -147,9 +146,9 @@
 </pre></div>
 </div>
 <div class="math">
-\[\begin{split}(a + b)^2  &amp;=  (a + b)(a + b) \\
-           &amp;=  a^2 + 2ab + b^2\end{split}\]</div>
-<div class="section" id="id5">
+<p><img src="_images/math/36bfb9c00a80b23ca3e728c9031fab0468d7a4a7.png" alt="(a + b)^2  &amp;=  (a + b)(a + b) \\
+           &amp;=  a^2 + 2ab + b^2"/></p>
+</div><div class="section" id="id5">
 <h3>Нумерация формул<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>Для нумерации формул необходимо использовать параметр <tt class="docutils literal"><span class="pre">:label:</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. math:: e^{i\pi} + 1 = 0
@@ -159,8 +158,8 @@
 </pre></div>
 </div>
 <div class="math" id="equation-euler">
-<span class="eqno">(1)</span>\[e^{i\pi} + 1 = 0\]</div>
-<p>Формула <a href="#equation-euler">(1)</a> представляет собой Тождество Эйлера.</p>
+<p><span class="eqno">(1)</span><img src="_images/math/508eb813c60cbcddb2b56a5cf6338af0f0838a0a.png" alt="e^{i\pi} + 1 = 0"/></p>
+</div><p>Формула <a href="#equation-euler">(1)</a> представляет собой Тождество Эйлера.</p>
 <p>Подробнее смотрите главу <a class="reference external" href="http://sphinx-doc.org/ext/math.html?highlight=math#confval-pngmath_use_preview">Math support in Sphinx</a> официальной документации Sphinx.</p>
 </div>
 <div class="section" id="id6">

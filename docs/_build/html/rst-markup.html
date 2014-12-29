@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Стандартный синтаксис разметки reStructuredText &mdash; Документация Генератор документации Sphinx 1.0</title>
+    <title>Стандартный синтаксис разметки reStructuredText &mdash; Генератор документации Sphinx 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -24,8 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="Документация Генератор документации Sphinx 1.0" href="index.html" />
+    <link rel="top" title="Генератор документации Sphinx 1.0 documentation" href="index.html" />
     <link rel="next" title="Конструкции разметки Sphinx" href="sphinx-markup.html" />
     <link rel="prev" title="Генератор документации Sphinx" href="sphinx.html" /> 
   </head>
@@ -34,15 +33,15 @@
       <h3>Просмотр</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="Алфавитный указатель"
-             accesskey="I">указатель</a></li>
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
         <li class="right" >
           <a href="sphinx-markup.html" title="Конструкции разметки Sphinx"
-             accesskey="N">следующий</a> |</li>
+             accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="sphinx.html" title="Генератор документации Sphinx"
-             accesskey="P">предыдущий</a> |</li>
-        <li><a href="index.html">Документация Генератор документации Sphinx 1.0</a> &raquo;</li> 
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Генератор документации Sphinx 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -52,10 +51,10 @@
           <div class="body">
             
   <div class="section" id="restructuredtext">
-<span id="rst-murkup-label"></span><h1><a class="toc-backref" href="#id53">Стандартный синтаксис разметки reStructuredText</a><a class="headerlink" href="#restructuredtext" title="Ссылка на этот заголовок">¶</a></h1>
+<span id="rst-murkup-label"></span><h1><a class="toc-backref" href="#id53">Стандартный синтаксис разметки reStructuredText</a><a class="headerlink" href="#restructuredtext" title="Permalink to this headline">¶</a></h1>
 <p>В главе приведен стандартный синтаксис разметки reStructuredText. Python Sphinx значительно расширяет возможности reStructuredText и вносит дополнительные конструкции. Так как данная глава может быть полезна всем пользователям reStructuredText, конструкции работающие только в Sphinx вынесены в следующую главу.</p>
 <div class="section" id="id1">
-<h2><a class="toc-backref" href="#id54">Что такое reStructuredText?</a><a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<h2><a class="toc-backref" href="#id54">Что такое reStructuredText?</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p><strong>reStructuredText</strong> (сокращение: <strong>ReST</strong>, расширение файла: <strong>.rst</strong>) — облегчённый язык разметки, который может быть преобразован в различные форматы — HTML, ePub, PDF и другие.</p>
 <p>Документы с разметкой ReST являются обычными текстовыми файлами. С такими файлами очень легко работать посредством системы управления Git, которая позволяет отслеживать все вносимые изменения, легко принимать или отклонять их.</p>
 <p>Помимо этого, документы в формате .rst можно открывать и редактировать в любом простом текстовом редакторе (например, в Блокноте). Это позволяет работать над документацией в любых условиях, на любых платформах, без необходимости использовать специализированное программное обеспечение.</p>
@@ -63,10 +62,10 @@
 <p>ReST аналогичен языку разметки Markdown, но обладает более расширенным синтаксисом, особенно вкупе с генератором документации Sphinx.  ReST используется во многих проектах, например, на сайте GitHub. Также его используют многие генераторы статических сайтов такие, как: Hyde, Pelican и другие.</p>
 </div>
 <div class="section" id="id2">
-<h2><a class="toc-backref" href="#id55">Редакторы reStructuredText</a><a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<h2><a class="toc-backref" href="#id55">Редакторы reStructuredText</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Документы с разметкой ReST можно создавать в любом обычном текстовом редакторе, но существует ряд специализированных редакторов ReST с возможностью предпросмотра и другими удобными функциями.</p>
 <div class="section" id="retext">
-<h3><a class="toc-backref" href="#id56">ReText</a><a class="headerlink" href="#retext" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id56">ReText</a><a class="headerlink" href="#retext" title="Permalink to this headline">¶</a></h3>
 <p><strong>ReText</strong> (<a class="reference external" href="http://sourceforge.net/projects/retext/">http://sourceforge.net/projects/retext/</a>) — редактор Markdown и reStructuredText для Linux. Есть возможность установки ReText в ОС Windows, инструкция находится <a class="reference external" href="http://sourceforge.net/p/retext/wiki/Windows%20Install%20of%20ReText/">здесь</a>. Для Mac OS X репозиторий <a class="reference external" href="http://brew.sh/">Homebrew</a>: <a class="reference external" href="https://github.com/samueljohn/homebrew-python">https://github.com/samueljohn/homebrew-python</a></p>
 <p>Основные возможности редактора:</p>
 <ul class="simple">
@@ -79,31 +78,31 @@
 <li>Поддержка математических формул (с синтаксисом LaTeX).</li>
 </ul>
 <div class="admonition warning">
-<p class="first admonition-title">Предупреждение</p>
+<p class="first admonition-title">Warning</p>
 <p class="last">ReText не распознает конструкции, специфичные для Sphinx.</p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Примечание</p>
+<p class="first admonition-title">Note</p>
 <p class="last">Данное руководство написано с помощью ReText.</p>
 </div>
 </div>
 <div class="section" id="online-restructuredtext-editor">
-<h3><a class="toc-backref" href="#id57">Online reStructuredText editor</a><a class="headerlink" href="#online-restructuredtext-editor" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id57">Online reStructuredText editor</a><a class="headerlink" href="#online-restructuredtext-editor" title="Permalink to this headline">¶</a></h3>
 <p><strong>Online reStructuredText editor</strong> (<a class="reference external" href="http://rst.ninjs.org">http://rst.ninjs.org</a>) — простой онлайн-редактор reStructuredText.</p>
 </div>
 <div class="section" id="notex-ch">
-<h3><a class="toc-backref" href="#id58">NoTex.ch</a><a class="headerlink" href="#notex-ch" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id58">NoTex.ch</a><a class="headerlink" href="#notex-ch" title="Permalink to this headline">¶</a></h3>
 <p><strong>NoTex.ch</strong> (<a class="reference external" href="https://www.notex.ch/">https://www.notex.ch/</a>) — онлайн-редактор с поддержкой reStructuredText, Markdown, LaTex и др. Поддерживает экспорт в PDF, HTML, EPUB, txt и LaTex.</p>
 </div>
 <div class="section" id="rstext-me">
-<h3><a class="toc-backref" href="#id59">rstext.me</a><a class="headerlink" href="#rstext-me" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id59">rstext.me</a><a class="headerlink" href="#rstext-me" title="Permalink to this headline">¶</a></h3>
 <p><strong>rstext.me</strong> (<a class="reference external" href="http://rstext.me/">http://rstext.me/</a>) — онлайн-редактор reStructuredText с возможностью экспорта в разные форматы.</p>
 </div>
 </div>
 <div class="section" id="id4">
-<h2><a class="toc-backref" href="#id60">Синтаксис reStructuredText</a><a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<h2><a class="toc-backref" href="#id60">Синтаксис reStructuredText</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id5">
-<h3><a class="toc-backref" href="#id61">Базовые концепции</a><a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id61">Базовые концепции</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>Синтаксис reStructuredText опирается на следующие концепции:</p>
 <ul class="simple">
 <li>Отступы и пробелы имеют значение для команд разметки <a class="footnote-reference" href="#id7" id="id6">[1]</a>, но не имеют значения внутри текста (10 пробелов будут отображены как один);</li>
@@ -117,7 +116,7 @@
 </table>
 </div>
 <div class="section" id="id8">
-<h3><a class="toc-backref" href="#id62">Абзацы</a><a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id62">Абзацы</a><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Абзацы в <abbr title="reStructuredText">ReST</abbr> отделяются друг от друга пустой строкой:</p>
 <div class="highlight-python"><div class="highlight"><pre>Первый абзац...
 
@@ -127,7 +126,7 @@
 </div>
 </div>
 <div class="section" id="id9">
-<h3><a class="toc-backref" href="#id63">Заголовки</a><a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id63">Заголовки</a><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p><abbr title="reStructuredText">ReST</abbr> поддерживает несколько уровней заголовков. Заголовки первого уровня (главы) подчеркиваются символом равно <tt class="docutils literal"><span class="pre">=</span></tt>. Заголовки второго уровня (подглавы) подчеркиваются символом короткого тире или минуса <tt class="docutils literal"><span class="pre">-</span></tt>. Заголовки третьего уровня (подпункта) подчеркиваются символом тильды  <tt class="docutils literal"><span class="pre">~</span></tt>. Для параграфов допускается использовать подчеркивание символами двойных кавычек <tt class="docutils literal"><span class="pre">&quot;</span></tt></p>
 <p>Заголовки подчеркиваются (или отбиваются сверху и снизу) с помощью небуквенных
 и нецифровых 7­-битных ASCII символов. Рекомендуется использовать: «<tt class="docutils literal"><span class="pre">=</span> <span class="pre">­</span> <span class="pre">`</span> <span class="pre">:</span> <span class="pre">'</span> <span class="pre">&quot;</span> <span class="pre">~</span> <span class="pre">^</span> <span class="pre">_</span> <span class="pre">*</span> <span class="pre">+</span> <span class="pre">#</span> <span class="pre">&lt;</span> <span class="pre">&gt;</span></tt>». Отбивка должна быть не короче текста заголовка.</p>
@@ -146,7 +145,7 @@
 </div>
 </div>
 <div class="section" id="id10">
-<h3><a class="toc-backref" href="#id64">Начертание</a><a class="headerlink" href="#id10" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id64">Начертание</a><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>Чтобы выделить текст <strong>жирным</strong> начертанием или <em>курсивным</em> используется обособление звездочками:</p>
 <div class="highlight-python"><div class="highlight"><pre>**жирный текст**
 
@@ -154,7 +153,7 @@
 </pre></div>
 </div>
 <div class="admonition attention">
-<p class="first admonition-title">Внимание</p>
+<p class="first admonition-title">Attention</p>
 <p class="last">Не допускается наличие пробелов между выделяемым словом и звездочкой, например, команда <tt class="docutils literal"><span class="pre">**</span> <span class="pre">жирный</span> <span class="pre">текст**</span></tt> не даст нужного эффекта.</p>
 </div>
 <p>Начертание текста <tt class="docutils literal"><span class="pre">«как</span> <span class="pre">есть»</span></tt> достигается обособлением двумя обратными кавычками:</p>
@@ -163,7 +162,7 @@
 </div>
 </div>
 <div class="section" id="id11">
-<h3><a class="toc-backref" href="#id65">Нумерованные списки</a><a class="headerlink" href="#id11" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id65">Нумерованные списки</a><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <p>Нумерованные списки создаются с помощью символа решетки с точкой <tt class="docutils literal"><span class="pre">#.</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>#. Один
 #. Два
@@ -189,7 +188,7 @@
 </ol>
 </div>
 <div class="section" id="id12">
-<h3><a class="toc-backref" href="#id66">Маркированные списки</a><a class="headerlink" href="#id12" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id66">Маркированные списки</a><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
 <p>Маркированные списки создаются с помощью символа звездочки <tt class="docutils literal"><span class="pre">*</span></tt> или дефиса <tt class="docutils literal"><span class="pre">-</span></tt>. Пробелы после маркера обязательны:</p>
 <div class="highlight-python"><div class="highlight"><pre>* Один
 * Два
@@ -204,7 +203,7 @@
 </ul>
 </div>
 <div class="section" id="id13">
-<h3><a class="toc-backref" href="#id67">Вложенные списки</a><a class="headerlink" href="#id13" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id67">Вложенные списки</a><a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre>* Первый уровень
     * Второй уровень
         * Третий уровень
@@ -255,7 +254,7 @@
 </ol>
 </div>
 <div class="section" id="id14">
-<h3><a class="toc-backref" href="#id68">Верхний и нижние индексы</a><a class="headerlink" href="#id14" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id68">Верхний и нижние индексы</a><a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
 <p>Верхние и нижние индексы добавляются с помощью команд  <tt class="docutils literal"><span class="pre">:sub:</span></tt> и <tt class="docutils literal"><span class="pre">:sup:</span></tt>.</p>
 <div class="highlight-python"><div class="highlight"><pre>H\ :sub:`2`\ O
 E = mc\ :sup:`2`
@@ -275,7 +274,7 @@ E = mc\ :sup:`2`
 <p>Химическая формула воды — H<sub>2</sub>O.</p>
 </div>
 <div class="section" id="id15">
-<h3><a class="toc-backref" href="#id69">Определения</a><a class="headerlink" href="#id15" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id69">Определения</a><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
 <p>В <abbr title="reStructuredText">ReST</abbr> можно набрать два типа определений:</p>
 <div class="highlight-python"><div class="highlight"><pre>:Первый: В прямоугольном треугольнике квадрат длины
          гипотенузы равен сумме квадратов длин катетов.
@@ -300,7 +299,7 @@ E = mc\ :sup:`2`
 </dl>
 </div>
 <div class="section" id="id16">
-<h3><a class="toc-backref" href="#id70">Цитаты</a><a class="headerlink" href="#id16" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id70">Цитаты</a><a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <p>Для вставки цитат используется отступ, сделанный с помощью клавиши <cite>Tab</cite>:</p>
 <div class="highlight-python"><div class="highlight"><pre>Основной текст:
 
@@ -316,7 +315,7 @@ E = mc\ :sup:`2`
 </div></blockquote>
 </div>
 <div class="section" id="id17">
-<h3><a class="toc-backref" href="#id71">Эпиграф</a><a class="headerlink" href="#id17" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id71">Эпиграф</a><a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre>.. epigraph::
 
    *«Если бы двери восприятия были чисты, всё
@@ -345,7 +344,7 @@ E = mc\ :sup:`2`
 </div>
 </div>
 <div class="section" id="rst-footnotes-label">
-<span id="id18"></span><h3><a class="toc-backref" href="#id72">Сноски</a><a class="headerlink" href="#rst-footnotes-label" title="Ссылка на этот заголовок">¶</a></h3>
+<span id="id18"></span><h3><a class="toc-backref" href="#id72">Сноски</a><a class="headerlink" href="#rst-footnotes-label" title="Permalink to this headline">¶</a></h3>
 <p>Сноски могут быть разного вида:</p>
 <div class="highlight-python"><div class="highlight"><pre>Числовая сноска [5]_.
 
@@ -413,7 +412,7 @@ E = mc\ :sup:`2`
 <p>При экспорте в PDF сноски автоматически располагаются в конце страницы. Чтобы цитата располагалась в конце HTML-страницы, необходимо команду сноски располагать в конце <em>.rst</em> файла <a class="reference internal" href="#cit2003" id="id30">[CIT2003]</a>.</p>
 </div>
 <div class="section" id="id31">
-<h3><a class="toc-backref" href="#id73">Комментарии</a><a class="headerlink" href="#id31" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id73">Комментарии</a><a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
 <p>В <abbr title="reStructuredText">ReST</abbr> можно оставлять комментарии, которые отображаются только в исходном файле ReST. Комментарии создаются с помощью двух точек в начале предложения <tt class="docutils literal"><span class="pre">..</span></tt>. Для создания многострочных комментариев необходимо соблюдать отступ:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. Это комментарий
    Многострочный комментарий
@@ -421,7 +420,7 @@ E = mc\ :sup:`2`
 </div>
 </div>
 <div class="section" id="listing-rst">
-<span id="id32"></span><h3><a class="toc-backref" href="#id74">Листинги (исходный код)</a><a class="headerlink" href="#listing-rst" title="Ссылка на этот заголовок">¶</a></h3>
+<span id="id32"></span><h3><a class="toc-backref" href="#id74">Листинги (исходный код)</a><a class="headerlink" href="#listing-rst" title="Permalink to this headline">¶</a></h3>
 <p>Если обособление обратными кавычками используется для визуального выделения команд в абзацах, то для примеров частей исходного кода используется команда из двух двоеточий <tt class="docutils literal"><span class="pre">::</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>Посмотрим на исходный код:
 ::
@@ -430,7 +429,7 @@ E = mc\ :sup:`2`
 </pre></div>
 </div>
 <div class="admonition warning">
-<p class="first admonition-title">Предупреждение</p>
+<p class="first admonition-title">Warning</p>
 <p class="last">Пустая строка между командой <tt class="docutils literal"><span class="pre">::</span></tt> и примером кода, а также отступ перед ним, обязательны.</p>
 </div>
 <p>Существуют другие способы ввода команды <tt class="docutils literal"><span class="pre">::</span></tt>, например:</p>
@@ -449,7 +448,7 @@ E = mc\ :sup:`2`
 <p>Для вставки блоков исходного кода с подсветкой синтаксиса и нумерацией строк в Sphinx используются специальные команды, подробнее смотрите раздел <a class="reference internal" href="sphinx-markup.html#source-code-label"><em>Примеры исходного кода с подсветкой синтаксиса</em></a>.</p>
 </div>
 <div class="section" id="id33">
-<h3><a class="toc-backref" href="#id75">Автозамены (Подстановки)</a><a class="headerlink" href="#id33" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id75">Автозамены (Подстановки)</a><a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
 <p>Язык <em>reStructuredText</em> — очень гибкий язык разметки, который поддерживает функцию автозамены (подстановки).</p>
 <div class="highlight-python"><div class="highlight"><pre>Язык |ReST| — очень гибкий язык разметки (подстановки).
 
@@ -459,7 +458,7 @@ E = mc\ :sup:`2`
 <p>Для удобства я в начале каждого файла делаю список автозамен.</p>
 </div>
 <div class="section" id="unicode">
-<h3><a class="toc-backref" href="#id76">Использование символов юникод (unicode)</a><a class="headerlink" href="#unicode" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id76">Использование символов юникод (unicode)</a><a class="headerlink" href="#unicode" title="Permalink to this headline">¶</a></h3>
 <p>С функцией автозамены связана функция вставки символов unicode:</p>
 <div class="highlight-python"><div class="highlight"><pre>Copyright |copy| 2015, |LibreRussia (TM)| |---| все права защищены.
 
@@ -472,25 +471,25 @@ E = mc\ :sup:`2`
 <p>Copyright © 2015, LibreRussia™ — все права защищены.</p>
 </div>
 <div class="section" id="id34">
-<h3><a class="toc-backref" href="#id77">Дата и время</a><a class="headerlink" href="#id34" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id77">Дата и время</a><a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre>.. |date| date:: %d.%m.%Y
 .. |time| date:: %H:%M
 
 Текущая дата |date| и время |time|
 </pre></div>
 </div>
-<p>Результат: Текущая дата 29.12.2014 и время 08:32 (на момент генерации документа).</p>
+<p>Результат: Текущая дата 29.12.2014 и время 14:49 (на момент генерации документа).</p>
 <p>Sphinx добавляет дополнительные команды автозамены, которые не требуют объявления. Подробнее о них написано в следующей главе.</p>
 </div>
 <div class="section" id="id35">
-<h3><a class="toc-backref" href="#id78">Вставка текста из других файлов</a><a class="headerlink" href="#id35" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id78">Вставка текста из других файлов</a><a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
 <p>ReST позволяет вставлять текст из других файлов:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. include:: имя_файла
 </pre></div>
 </div>
 </div>
 <div class="section" id="id36">
-<h3><a class="toc-backref" href="#id79">Черта</a><a class="headerlink" href="#id36" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id79">Черта</a><a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
 <p>Иногда возникает необходимость  визуально отделить абзац, для этого можно воспользоваться чертой, достаточно поставить подряд несколько дефисов (не меньше 4-х), также можно воспользоваться нижним подчеркиванием:</p>
 <div class="highlight-python"><div class="highlight"><pre>--------
 
@@ -498,12 +497,12 @@ ________
 </pre></div>
 </div>
 <div class="admonition warning">
-<p class="first admonition-title">Предупреждение</p>
+<p class="first admonition-title">Warning</p>
 <p class="last">Символы черты должны быть отбиты пустыми строками до и после.</p>
 </div>
 </div>
 <div class="section" id="id37">
-<h3><a class="toc-backref" href="#id80">Ссылки</a><a class="headerlink" href="#id37" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id80">Ссылки</a><a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h3>
 <p>Внешние ссылки создаются так:</p>
 <div class="highlight-python"><div class="highlight"><pre>1. Внешние ссылки выглядят так: ссылка_.
 
@@ -540,7 +539,7 @@ ________
 <p>Sphinx расширяет возможности создания ссылок, в том числе позволяет ссылаться на заголовки в других документах. Подробнее читайте раздел <a class="reference internal" href="sphinx-markup.html#cross-ref-label"><em>Перекрестные ссылки</em></a>.</p>
 </div>
 <div class="section" id="img-label">
-<span id="id41"></span><h3><a class="toc-backref" href="#id81">Изображения и иллюстрации</a><a class="headerlink" href="#img-label" title="Ссылка на этот заголовок">¶</a></h3>
+<span id="id41"></span><h3><a class="toc-backref" href="#id81">Изображения и иллюстрации</a><a class="headerlink" href="#img-label" title="Permalink to this headline">¶</a></h3>
 <p>Вставка изображения между слов <img alt="кубик-рубика" src="_images/favicon.ico" /> осуществляться с помощью функции автозамены:</p>
 <div class="highlight-python"><div class="highlight"><pre>Вставка изображения между слов |кубик-рубика| осуществляться с помощью функции автозамены:
 
@@ -577,7 +576,7 @@ ________
 </div>
 </div>
 <div class="section" id="table-label">
-<span id="id42"></span><h3><a class="toc-backref" href="#id82">Таблицы</a><a class="headerlink" href="#table-label" title="Ссылка на этот заголовок">¶</a></h3>
+<span id="id42"></span><h3><a class="toc-backref" href="#id82">Таблицы</a><a class="headerlink" href="#table-label" title="Permalink to this headline">¶</a></h3>
 <p>Создавать таблицы можно несколькими способами:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. table:: Заголовок таблицы (Внимание! Отступ таблицы относительно
            команды ..``table::`` обязателен)
@@ -597,7 +596,7 @@ ________
 </pre></div>
 </div>
 <div class="admonition important">
-<p class="first admonition-title">Важно</p>
+<p class="first admonition-title">Important</p>
 <p class="last">Отступ таблицы относительно команды <tt class="docutils literal"><span class="pre">..</span> <span class="pre">table::</span></tt> обязателен</p>
 </div>
 <p>Результат:</p>
@@ -828,7 +827,7 @@ crunchy, now would it?</td>
 </table>
 </div>
 <div class="section" id="id43">
-<h3><a class="toc-backref" href="#id83">Формулы</a><a class="headerlink" href="#id43" title="Ссылка на этот заголовок">¶</a></h3>
+<h3><a class="toc-backref" href="#id83">Формулы</a><a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h3>
 <p>Вставка формул осуществляется командой <tt class="docutils literal"><span class="pre">..</span> <span class="pre">math::</span></tt>. Для ввода формул используется синтаксис LaTeX:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. math::
 
@@ -836,51 +835,107 @@ crunchy, now would it?</td>
 </pre></div>
 </div>
 <p>Результат:</p>
-<div class="math">
-\[α_t(i) = P(O_1, O_2, … O_t, q_t = S_i λ)\]</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">α_t(i) = P(O_1, O_2, … O_t, q_t = S_i λ)</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=latex)
+ restricted \write18 enabled.
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2014/05/01&gt;
+Babel &lt;3.9k&gt; and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def))
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?&#8217; option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty)
+No file math.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-3.def)
+! Undefined control sequence.
+\u-default-945 #1-&gt;\textalpha 
+                              
+l.14 \end{gather}
+                 
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def)
+! Undefined control sequence.
+\u-default-955 #1-&gt;\textlambda 
+                               
+l.14 \end{gather}
+                 
+! Undefined control sequence.
+\u-default-945 #1-&gt;\textalpha 
+                              
+l.14 \end{gather}
+                 
+! Undefined control sequence.
+\u-default-955 #1-&gt;\textlambda 
+                               
+l.14 \end{gather}
+                 
+[1] (./math.aux) )
+(see the transcript file for additional information)
+Output written on math.dvi (1 page, 480 bytes).
+Transcript written on math.log.
+</div>
 <p>Sphinx расширяет возможности отображения формул, добавляя возможность ссылаться на них. Подробнее в разделе <a class="reference internal" href="sphinx-markup.html#math-insert-label"><em>Вставка формул</em></a>.</p>
 <div class="admonition note">
-<p class="first admonition-title">Примечание</p>
+<p class="first admonition-title">Note</p>
 <p class="last"><a class="reference external" href="https://ru.wikipedia.org/wiki/Таблица_математических_символов">Таблица математических символов</a></p>
 </div>
 </div>
 <div class="section" id="admonitions-label">
-<span id="id45"></span><h3><a class="toc-backref" href="#id84">Блоки примечаний и предупреждений</a><a class="headerlink" href="#admonitions-label" title="Ссылка на этот заголовок">¶</a></h3>
+<span id="id45"></span><h3><a class="toc-backref" href="#id84">Блоки примечаний и предупреждений</a><a class="headerlink" href="#admonitions-label" title="Permalink to this headline">¶</a></h3>
 <p>Блоки примечаний и предупреждений используются для сообщения дополнительной информации. Локализация заголовков и оформление блоков зависит от используемого шаблона. В стандартном шаблоне, используемом на сайте ReadTheDocs.org все блоки имеют собственное оформление, а локализация заголовков зависит от выбранного языка. Также язык настраивается в файле конфигурации Sphinx <tt class="docutils literal"><span class="pre">conf.py</span></tt>.</p>
 <div class="admonition attention">
-<p class="first admonition-title">Внимание</p>
+<p class="first admonition-title">Attention</p>
 <p class="last">Блок <strong>Внимание</strong>, команда: <tt class="docutils literal"><span class="pre">..</span> <span class="pre">attention::</span></tt></p>
 </div>
 <div class="admonition caution">
-<p class="first admonition-title">Осторожно</p>
+<p class="first admonition-title">Caution</p>
 <p class="last">Блок <strong>Осторожно</strong>, команда: <tt class="docutils literal"><span class="pre">..</span> <span class="pre">caution::</span></tt></p>
 </div>
 <div class="admonition danger">
-<p class="first admonition-title">Опасно</p>
+<p class="first admonition-title">Danger</p>
 <p class="last">Блок <strong>Опасно</strong>, команда: <tt class="docutils literal"><span class="pre">..</span> <span class="pre">danger::</span></tt></p>
 </div>
 <div class="admonition error">
-<p class="first admonition-title">Ошибка</p>
+<p class="first admonition-title">Error</p>
 <p class="last">Блок <strong>Ошибка</strong>, команда: <tt class="docutils literal"><span class="pre">..</span> <span class="pre">error::</span></tt></p>
 </div>
 <div class="admonition hint">
-<p class="first admonition-title">Подсказка</p>
+<p class="first admonition-title">Hint</p>
 <p class="last">Блок <strong>Подсказка</strong>, команда: <tt class="docutils literal"><span class="pre">..</span> <span class="pre">hint::</span></tt></p>
 </div>
 <div class="admonition important">
-<p class="first admonition-title">Важно</p>
+<p class="first admonition-title">Important</p>
 <p class="last">Блок <strong>Важно</strong>, команда: <tt class="docutils literal"><span class="pre">..</span> <span class="pre">important::</span></tt></p>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Примечание</p>
+<p class="first admonition-title">Note</p>
 <p class="last">Блок <strong>Примечание</strong>, команда: <tt class="docutils literal"><span class="pre">..</span> <span class="pre">note::</span></tt></p>
 </div>
 <div class="admonition tip">
-<p class="first admonition-title">Совет</p>
+<p class="first admonition-title">Tip</p>
 <p class="last">Блок <strong>Совет</strong>, команда: <tt class="docutils literal"><span class="pre">..</span> <span class="pre">tip::</span></tt></p>
 </div>
 <div class="admonition warning">
-<p class="first admonition-title">Предупреждение</p>
+<p class="first admonition-title">Warning</p>
 <p class="last">Блок <strong>Предупреждение</strong>, команда: <tt class="docutils literal"><span class="pre">..</span> <span class="pre">warning::</span></tt></p>
 </div>
 <p>Код блоков выглядит так:</p>
@@ -889,7 +944,7 @@ crunchy, now would it?</td>
 </div>
 </div>
 <div class="section" id="rst-cont-label">
-<span id="id46"></span><h3><a class="toc-backref" href="#id85">Содержание</a><a class="headerlink" href="#rst-cont-label" title="Ссылка на этот заголовок">¶</a></h3>
+<span id="id46"></span><h3><a class="toc-backref" href="#id85">Содержание</a><a class="headerlink" href="#rst-cont-label" title="Permalink to this headline">¶</a></h3>
 <p>На основе заголовков ReST автоматически создает оглавление, которое вставляется командой <tt class="docutils literal"><span class="pre">..</span> <span class="pre">contents::</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. contents:: Оглавление
    :depth: 2
@@ -961,7 +1016,7 @@ crunchy, now would it?</td>
 </div>
 </div>
 <div class="section" id="meta">
-<span id="meta-label"></span><h3><a class="toc-backref" href="#id86">Метаданные. Тег META</a><a class="headerlink" href="#meta" title="Ссылка на этот заголовок">¶</a></h3>
+<span id="meta-label"></span><h3><a class="toc-backref" href="#id86">Метаданные. Тег META</a><a class="headerlink" href="#meta" title="Permalink to this headline">¶</a></h3>
 <p>Имеется возможность добавлять метаданные каждой из страниц непосредственно в rst файлы  с помощью директивы <tt class="docutils literal"><span class="pre">..</span> <span class="pre">meta::</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. meta::
    :description: The reStructuredText plaintext markup language
@@ -1078,15 +1133,15 @@ content=&quot;The reStructuredText plaintext markup language&quot;&gt;
       <h3>Просмотр</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="Алфавитный указатель"
-             >указатель</a></li>
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
         <li class="right" >
           <a href="sphinx-markup.html" title="Конструкции разметки Sphinx"
-             >следующий</a> |</li>
+             >next</a> |</li>
         <li class="right" >
           <a href="sphinx.html" title="Генератор документации Sphinx"
-             >предыдущий</a> |</li>
-        <li><a href="index.html">Документация Генератор документации Sphinx 1.0</a> &raquo;</li> 
+             >previous</a> |</li>
+        <li><a href="index.html">Генератор документации Sphinx 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
