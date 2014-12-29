@@ -151,6 +151,8 @@ Sphinx поддерживает вставку примеров исходног
 
 Формула :eq:`euler` представляет собой Тождество Эйлера.
 
+Расположение номера относительно формулы зависит от настроек HTML-темы.
+
 Подробнее смотрите главу `Math support in Sphinx <http://sphinx-doc.org/ext/math.html?highlight=math#confval-pngmath_use_preview>`_ официальной документации Sphinx.
 
 Отображение формул

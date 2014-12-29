@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Известные проблемы &mdash; Документация Генератор документации Sphinx 1.0</title>
+    <title>Известные проблемы &mdash; Генератор документации Sphinx 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <link rel="top" title="Документация Генератор документации Sphinx 1.0" href="index.html" />
+    <link rel="top" title="Генератор документации Sphinx 1.0 documentation" href="index.html" />
     <link rel="next" title="Часто задаваемые вопросы" href="faq.html" />
     <link rel="prev" title="GitHub и Read The Docs" href="rtd-gh.html" /> 
   </head>
@@ -33,15 +33,15 @@
       <h3>Просмотр</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="Алфавитный указатель"
-             accesskey="I">указатель</a></li>
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
         <li class="right" >
           <a href="faq.html" title="Часто задаваемые вопросы"
-             accesskey="N">следующий</a> |</li>
+             accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="rtd-gh.html" title="GitHub и Read The Docs"
-             accesskey="P">предыдущий</a> |</li>
-        <li><a href="index.html">Документация Генератор документации Sphinx 1.0</a> &raquo;</li> 
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Генератор документации Sphinx 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -51,33 +51,33 @@
           <div class="body">
             
   <div class="section" id="knownissues-chapter">
-<span id="id1"></span><h1>Известные проблемы<a class="headerlink" href="#knownissues-chapter" title="Ссылка на этот заголовок">¶</a></h1>
+<span id="id1"></span><h1>Известные проблемы<a class="headerlink" href="#knownissues-chapter" title="Permalink to this headline">¶</a></h1>
 <p>В данной главе приведены известные проблемы, с которыми я столкнулся за время эксплуатации Sphinx.</p>
 <div class="section" id="id2">
-<h2>Кириллические символы в алфавитном указателе<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Кириллические символы в алфавитном указателе<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Кириллические элементы алфавитного указателя не сортируются по алфавиту и попадают в раздел <tt class="docutils literal"><span class="pre">символы</span></tt>. Решение проблемы пока мною не найдено.</p>
 </div>
 <div class="section" id="latex">
-<span id="ltx-refs-label"></span><h2>Перекрестные ссылки в LaTeX<a class="headerlink" href="#latex" title="Ссылка на этот заголовок">¶</a></h2>
+<span id="ltx-refs-label"></span><h2>Перекрестные ссылки в LaTeX<a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h2>
 <p>Подписи к таблицам и рисункам в HTML отображаются без названия категории «Таблица» или «Рисунок», но в LaTeX-документах к подписям автоматически добавляется и категория с номером. Нумерация также осуществляется автоматически.</p>
 <p>При создании перекрестных ссылок на иллюстрации и таблицы ссылка принимает название этих объектов, что не очень удобно если названия длинные. Обычно в документации принято делать ссылки в формате «см. Рисунок N».</p>
 <p>В LaTeX-документах ссылки на рисунки и таблицы также преобразуются в названия, а не в категории.</p>
 <p>Способ обхода этой проблемы описан <a class="reference external" href="http://article.gmane.org/gmane.text.docutils.user/5623">здесь</a>. У меня не было времени его протестировать. Буду благодарен, если кто-нибудь поделится своим опытом на  этот счёт.</p>
 </div>
 <div class="section" id="img-scale-label">
-<span id="id4"></span><h2>Масштабирование изображений в LaTeX<a class="headerlink" href="#img-scale-label" title="Ссылка на этот заголовок">¶</a></h2>
+<span id="id4"></span><h2>Масштабирование изображений в LaTeX<a class="headerlink" href="#img-scale-label" title="Permalink to this headline">¶</a></h2>
 <p>Столкнулся с проблемой масштабирования изображений в LaTeX. При использовании директивы  <tt class="docutils literal"><span class="pre">..</span> <span class="pre">image::</span></tt> с параметрами <tt class="docutils literal"><span class="pre">:height:</span></tt> или <tt class="docutils literal"><span class="pre">:width</span></tt> масштабирование изображений в LaTeX не происходило. При использовании директивы <tt class="docutils literal"><span class="pre">..</span> <span class="pre">figure::</span></tt> с параметром <tt class="docutils literal"><span class="pre">:scale:</span></tt> все работает как надо, изображения масштабируются.</p>
 </div>
 <div class="section" id="pdf-read-the-docs">
-<span id="pdf-errors-label"></span><h2>Ошибки при сборке PDF на Read The Docs<a class="headerlink" href="#pdf-read-the-docs" title="Ссылка на этот заголовок">¶</a></h2>
+<span id="pdf-errors-label"></span><h2>Ошибки при сборке PDF на Read The Docs<a class="headerlink" href="#pdf-read-the-docs" title="Permalink to this headline">¶</a></h2>
 <p>При сборке PDF используется генерация в LaTeX. Стандартные настройки шаблона LaTeX, используемого Read the Docs, не поддерживают кириллицу. Чтобы включить поддержку кириллицы, необходимо поправить преамбулу LaTeX в файле настроек Sphinx-проекта <tt class="docutils literal"><span class="pre">conf.py</span></tt>. Подробнее смотрите пример <a class="reference internal" href="sphinx.html#ltx-label"><em>Преамбула</em></a>.</p>
 </div>
 <div class="section" id="epub">
-<span id="epub-errors-label"></span><h2>Проблемы с отображением листингов и таблиц в ePub<a class="headerlink" href="#epub" title="Ссылка на этот заголовок">¶</a></h2>
+<span id="epub-errors-label"></span><h2>Проблемы с отображением листингов и таблиц в ePub<a class="headerlink" href="#epub" title="Permalink to this headline">¶</a></h2>
 <p>Многие проблемы с отображением тех или иных фрагментов текста в ePub связаны непосредственно с просмотрщиками электронных книг. Например, плагин к браузеру Firefox для просмотра ePub отлично отображает все элементы. На Android в программе CoolReader некорректно отображаются листинги. В программе FBreader  листинги отображаются хорошо, а вот таблицы сбиваются.</p>
 </div>
 <div class="section" id="read-the-docs">
-<span id="math-errors2-label"></span><h2>Некорректно отображаются формулы на Read The Docs<a class="headerlink" href="#read-the-docs" title="Ссылка на этот заголовок">¶</a></h2>
+<span id="math-errors2-label"></span><h2>Некорректно отображаются формулы на Read The Docs<a class="headerlink" href="#read-the-docs" title="Permalink to this headline">¶</a></h2>
 <p>У меня возникли проблемы с отображением формул на Read The Docs при использовании расширения <tt class="docutils literal"><span class="pre">sphinx.ext.mathjax</span></tt>, пересобрав документацию с расширением <tt class="docutils literal"><span class="pre">sphinx.ext.pngmath</span></tt> все стало в порядке. Подробнее смотрите раздел <a class="reference internal" href="sphinx.html#ext-math-label"><em>Режим отображения формул</em></a>.</p>
 <p>Также проблема с отображением формул может появиться при использовании символов греческого алфавита  (α, β и т.д.) внутри формулы. Так как Sphinx использует для набора синтаксис LaTeX, то набирать данные символы надо следующим образом: <tt class="docutils literal"><span class="pre">\alpha</span></tt>, <tt class="docutils literal"><span class="pre">\lambda</span></tt> и т.д. (смотрите <a class="reference external" href="http://www.astronet.ru/db/msg/eid/latex%20/greec.html">Перечень команд LaTeX для набора греческих букв</a>).</p>
 <div class="highlight-python"><div class="highlight"><pre>.. math::
@@ -142,15 +142,15 @@
       <h3>Просмотр</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="Алфавитный указатель"
-             >указатель</a></li>
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
         <li class="right" >
           <a href="faq.html" title="Часто задаваемые вопросы"
-             >следующий</a> |</li>
+             >next</a> |</li>
         <li class="right" >
           <a href="rtd-gh.html" title="GitHub и Read The Docs"
-             >предыдущий</a> |</li>
-        <li><a href="index.html">Документация Генератор документации Sphinx 1.0</a> &raquo;</li> 
+             >previous</a> |</li>
+        <li><a href="index.html">Генератор документации Sphinx 1.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
