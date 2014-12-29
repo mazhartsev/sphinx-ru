@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>GitHub и Read The Docs &mdash; Генератор документации Sphinx 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Генератор документации Sphinx 1.0 documentation" href="index.html" />
+    <link rel="next" title="Известные проблемы" href="knownissues.html" />
+    <link rel="prev" title="Система управления версиями Git" href="git.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Просмотр</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="knownissues.html" title="Известные проблемы"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="git.html" title="Система управления версиями Git"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Генератор документации Sphinx 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="github-read-the-docs">
+<span id="rtd-gh-chapter"></span><h1>GitHub и Read The Docs<a class="headerlink" href="#github-read-the-docs" title="Permalink to this headline">¶</a></h1>
+<p>В главе  описывается взаимодействие двух сервисов и приводятся рекомендации по их настройке.</p>
+<div class="section" id="github">
+<span id="github-work"></span><h2>Работа с GitHub<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h2>
+<p>GitHub обладает богатым набором функций. В данном разделе будут описаны только основные функции, необходимые для совместной работы над документацией. За дополнительной информацией обратитесь к следующим материалам:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://git-scm.com/book/ru/v1">Официальное руководство Pro Git</a></li>
+<li><a class="reference external" href="http://githowto.com/ru">Интерактивный русскоязычный тур Git How To</a></li>
+<li><a class="reference external" href="http://www.unix-lab.org/posts/github/">UnixLab: GitHub и pastebin: что и зачем?</a></li>
+<li><a class="reference external" href="http://habrahabr.ru/post/233719/">Github — без командной строки</a></li>
+</ul>
+<div class="section" id="id2">
+<h3>Что такое GitHub<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>GitHub (<a class="reference external" href="https://github.com">https://github.com</a>) — веб-сервис для хостинга IT-проектов и их совместной разработки, основанный на системе контроля версий Git. Сервис абсолютно бесплатен для проектов с открытым исходным кодом. Для создания закрытых проектов предлагаются различные платные тарифные планы.</p>
+<p>GitHub позволяет:</p>
+<ul class="simple">
+<li>Размещать исходный код программ;</li>
+<li>Комментировать и обсуждать правки;</li>
+<li>Следить за обновлениями проектов;</li>
+<li>Копировать и скачивать репозитории проектов;</li>
+<li>Объединять репозитории;</li>
+<li>Создавать небольшие Вики проектов;</li>
+<li>Редактировать файлы непосредственно через веб-интерфейс;</li>
+<li>Создавать статичные HTML-страницы проектов;</li>
+<li>Для платных аккаунтов доступно создание приватных репозиториев, доступных ограниченному кругу пользователей.</li>
+</ul>
+<p>Кроме Git, сервис поддерживает получение и редактирование кода через SVN и Mercurial.</p>
+<p>Также на сайте есть pastebin-сервис <a class="reference external" href="https://gist.github.com">gist.github.com</a> для быстрой публикации фрагментов кода.</p>
+<p>Для комфортной работы с GitHub, необходимо уметь работать с системой контроля версий Git, подробнее смотрите главу <a class="reference internal" href="git.html#git-chapter"><em>Система управления версиями Git</em></a>.</p>
+</div>
+<div class="section" id="id3">
+<h3>Регистрация<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Процедура регистрации проста, бесплатна и не занимает много времени. Достаточно заполнить три поля: логин, адрес электронной почты и пароль. На почту будет выслан запрос на подтверждение регистрации.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-001a.png"><img alt="Процедура регистрации на GitHub" src="_images/git-img-001a.png" style="width: 419.6px; height: 262.0px;" /></a>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>Создание репозитория<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>GitHub — это не простой хостинг файлов, он завязан на систему  управления версиями файлов и служит для выгрузки локальных пользовательских git-репозиториев.</p>
+<p>Для создания репозитория нажмите значок <tt class="docutils literal"><span class="pre">+</span></tt> и выберите пункт <tt class="docutils literal"><span class="pre">New</span> <span class="pre">repository</span></tt>.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-001.png"><img alt="GitHub: Создание нового репозитория. Шаг 1." src="_images/git-img-001.png" style="width: 419.6px; height: 262.0px;" /></a>
+</div>
+<p>Будет открыта страница, на которой задается название репозитория и его описание.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-002.png"><img alt="GitHub: Создание нового репозитория. Шаг 2." src="_images/git-img-002.png" style="width: 419.6px; height: 262.0px;" /></a>
+</div>
+<p>Чтобы создать новый репозиторий на компьютере и выгрузить его в репозиторий на GitHub, выполните в командной строке:</p>
+<div class="highlight-python"><div class="highlight"><pre>touch README.md
+git init
+git add README.md
+git commit -m &quot;first commit&quot;
+git remote add origin https://github.com/LibreRussia/my-project.git
+git push -u origin master
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Используйте URL-адрес вашего репозитория для команды <tt class="docutils literal"><span class="pre">remote</span></tt>.</p>
+</div>
+<p>Чтобы выгрузить в репозиторий на GitHub уже существующий репозиторий выполните  в командной строке:</p>
+<div class="highlight-python"><div class="highlight"><pre>git remote add origin https://github.com/LibreRussia/my-project.git
+git push -u origin master
+</pre></div>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-003.png"><img alt="GitHub: Создание нового репозитория. Шаг 3." src="_images/git-img-003.png" style="width: 419.6px; height: 262.0px;" /></a>
+</div>
+<p>Выгружать файлы в репозиторий на GitHub могут только те пользователи, которые имеют право на запись. Загрузить же копию репозитория на компьютер может любой пользователей, если это не ограничено настройками приватности репозитория (доступно в платных тарифах).</p>
+<p>Также имеется возможность создавать совместные для нескольких аккаунтов репозитории. В целях безопасности я предпочитаю не давать никому доступ к основному репозиторию и работаю через систему форков (см. <a class="reference internal" href="#git-fork-label"><em>Копирование репозитория (Fork)</em></a>).</p>
+</div>
+<div class="section" id="fork">
+<span id="git-fork-label"></span><h3>Копирование репозитория (Fork)<a class="headerlink" href="#fork" title="Permalink to this headline">¶</a></h3>
+<p>Любой желающий может сделать полную копию(англ. <em>Fork</em> — разветвление) чужого репозитория и работать над ней независимо от основного. После внесения всех изменений, можно предложить их в основной репозиторий (сделать, так называемый, <a class="reference internal" href="#pull-requests"><em>Pull Requests</em></a>).</p>
+<p>Чтобы создать форк, необходимо зайти в репозиторий и нажать кнопку <tt class="docutils literal"><span class="pre">Fork</span></tt>.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-006.png"><img alt="GitHub: Создание копии репозитория." src="_images/git-img-006.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<p>После чего в аккаунте пользователя появится полная копия репозитория.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-005.png"><img alt="GitHub: Создание копии репозитория." src="_images/git-img-005.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<p>В качестве примера я сделал форк репозитория <tt class="docutils literal"><span class="pre">My_Project</span></tt> пользователя LibreRussia. Теперь в моем аккаунте (mazhartsev) есть его полная копия, с которой я могу спокойно работать не опасаясь покорёжить основной.</p>
+<p>Теперь внесем изменения в файл <tt class="docutils literal"><span class="pre">README.md</span></tt>, выбрав его и нажав значок с карандашом.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-006a.png"><img alt="GitHub: Онлайн редактирование текстовых файлов." src="_images/git-img-006a.png" style="width: 428.0px; height: 245.6px;" /></a>
+</div>
+<p>Одна из дополнительных приятных функций GitHub — возможность редактировать текстовые файлы через браузер.</p>
+<p>Добавим строку <tt class="docutils literal"><span class="pre">Привет,</span> <span class="pre">Мир!</span></tt> и сохраним файл.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-007.png"><img alt="GitHub: Онлайн редактирование текстовых файлов." src="_images/git-img-007.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<p>Теперь предложим наши изменения в основной репозиторий, то есть сделаем <a class="reference internal" href="#pull-requests"><em>Pull Requests</em></a>.</p>
+</div>
+<div class="section" id="pull-requests">
+<span id="id5"></span><h3>Pull Requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">¶</a></h3>
+<p>Для того, чтобы предложить свои изменения в основной репозиторий, необходимо перейти в раздел Pull Requests и нажать кнопку <tt class="docutils literal"><span class="pre">New</span> <span class="pre">pull</span> <span class="pre">request</span></tt>.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-007a.png"><img alt="GitHub: Создание Pull Requests." src="_images/git-img-007a.png" style="width: 428.0px; height: 245.6px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-008.png"><img alt="GitHub: Создание Pull Requests." src="_images/git-img-008.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<p>Будет открыта страница, показывающая внесенные изменения. Нажимаем <tt class="docutils literal"><span class="pre">Create</span> <span class="pre">pull</span> <span class="pre">request</span></tt>.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-009.png"><img alt="GitHub: Создание Pull Requests." src="_images/git-img-009.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<p>Далее будет предложено оставить комментарий к предлагаемым изменениям. Подробно описывать все внесенные изменения не надо, Git сам покажет их.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-010.png"><img alt="GitHub: Создание Pull Requests." src="_images/git-img-010.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-011.png"><img alt="GitHub: Создание Pull Requests." src="_images/git-img-011.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<p>Внесенные изменения отправлены на рассмотрение владельцу основного репозитория, который получит соответствующие уведомления на электронный адрес и в интерфейсе GitHub. Для демонстрации я перейду из своего аккаунта в аккаунт LibreRussia.</p>
+<div class="section" id="id6">
+<h4>Принятие Pull Requests<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<p>Уведомление о предложенных изменениях приходят на электронную почту владельца репозитория и отображаются в интерфейсе GitHub.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-012.png"><img alt="GitHub: Принятие Pull Requests." src="_images/git-img-012.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-013.png"><img alt="GitHub: Принятие Pull Requests." src="_images/git-img-013.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<p>Откроем уведомления.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-014.png"><img alt="GitHub: Принятие Pull Requests." src="_images/git-img-014.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<p>Чтобы выполнить слияние (англ. <em>Merge</em>) предложенных изменений нажмите кнопку <tt class="docutils literal"><span class="pre">Merge</span> <span class="pre">pull</span> <span class="pre">request</span></tt>.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-015.png"><img alt="GitHub: Принятие Pull Requests." src="_images/git-img-015.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<p>Будет открыта страница сравнения версий. Левая колонка отображает начальную версию файла, которая сейчас находится в основном репозитории. Правая колонка отображает изменения внесенные в новый файл. Плюсами отмечены добавленные строки. Если изменения нас устраивают, то нажимаем кнопку <tt class="docutils literal"><span class="pre">New</span> <span class="pre">Issue</span></tt>. После этого будет выведена информации о завершении слияния.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-016.png"><img alt="GitHub: Принятие Pull Requests." src="_images/git-img-016.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<p>Теперь проверим файл в основном репозитории.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-017.png"><img alt="GitHub: Принятие Pull Requests." src="_images/git-img-017.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-018.png"><img alt="GitHub: Принятие Pull Requests." src="_images/git-img-018.png" style="width: 425.2px; height: 250.8px;" /></a>
+</div>
+<p>Как видно, файл успешно изменен и в нём появилась строка, добавленная другим пользователем.</p>
+<p>В любой момент можно отменить сделанные изменения и откатиться к предыдущим версиям файла. Все это больше относится к функциям самой системы управления версиями Git.</p>
+<p>Подробнее о слияниях смотрите главу <em>Ветвление в Git</em> из официального руководства <a class="reference external" href="http://git-scm.com/book/ru">Pro Git</a>.</p>
+<p>Слияние копий репозиториев похоже на слияние двух веток, подробнее смотрите <a class="reference internal" href="#branch-label"><em>Ветвление</em></a>.</p>
+<p>Статьи на тему Pull Requests:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://www.unix-lab.org/posts/pull-request/">UnixLab: Как сделать pull request</a></li>
+<li><a class="reference external" href="http://habrahabr.ru/post/125999/">Pull request&#8217;ы на GitHub или Как мне внести изменения в чужой проект</a></li>
+<li><a class="reference external" href="http://habrahabr.ru/post/118124/">Кнопка слияния на GitHub (Merge)</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="branch-label">
+<span id="id8"></span><h3>Ветвление<a class="headerlink" href="#branch-label" title="Permalink to this headline">¶</a></h3>
+<p>Внутри одного репозитория можно создавать параллельные ветви (англ. <em>Branch</em>). Ветвление означает, что вы отклоняетесь от основной линии разработки и продолжаете работу, не вмешиваясь в основную линию. В любой момент можно выполнить слияние веток. Подробнее о ветвлении смотрите главу <em>Ветвление в Git</em> из официального руководства <a class="reference external" href="http://git-scm.com/book/ru">Pro Git</a>.</p>
+<p>Ветки напоминают функции <a class="reference internal" href="#git-fork-label"><em>Копирование репозитория (Fork)</em></a> и <a class="reference internal" href="#pull-requests"><em>Pull Requests</em></a>, но при этом всё происходит в рамках одного репозитория.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/git-img-019.png"><img alt="GitHub: Ветвление." src="_images/git-img-019.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<p>Данная функция очень полезна при создании документации, так как именно на ней основывается возможность вести  одновременно несколько версий руководства (см. <a class="reference internal" href="#rtd-vers-label"><em>Несколько версий документации</em></a>).</p>
+</div>
+<div class="section" id="id10">
+<h3>Обход блокировки GitHub<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>Не так давно случился неприятный инцидент с блокировкой GitHub на территории России. Не буду давать какую-либо оценку данному событию, но на случай повторения ситуации приведу способы обхода блокировки.</p>
+<p>Я воспользовался утилитой <tt class="docutils literal"><span class="pre">torsocks</span></tt>, которая устанавливается вместе с <a class="reference external" href="http://ru.wikipedia.org/wiki/Tor">Tor</a>. Чтобы установить Tor в Debian/Ubuntu выполните в терминале:</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo apt-get install tor
+</pre></div>
+</div>
+<p>Пакет tor включает программу torsocks. Если к команде запуска программы (например, git) приписать torsocks, то её сетевая активность (включая разрешение доменов) пойдёт через Tor. Сетевая активность, которую нельзя пропустить через Tor, будет отсекаться (например, UDP). Данный способ не работает в Windows.</p>
+<div class="highlight-python"><div class="highlight"><pre>torsocks git push
+torsocks git pull
+</pre></div>
+</div>
+<p>Другие способы обхода смотрите в статьях:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://habrahabr.ru/post/244869/">Краткая инструкция: GitHub через Tor</a></li>
+<li><a class="reference external" href="http://habrahabr.ru/post/245255/">Обход блокировки github.com в Windows с помощью DNSCrypt</a></li>
+<li><a class="reference external" href="http://habrahabr.ru/post/244861/">Краткая инструкция: GitHub через I2P</a></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h3>GitHub и совместная работа над документацией<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>GitHub позволяет обезопасить процесс создания документации. С одной стороны, это дополнительная резервная копия, которая не будет утеряна. С другой, возможность в случае необходимости откатиться к предыдущим изменениям. Система веток позволяет одновременно работать над несколькими версиями руководства. С помощью функции Pull Requests  все желающие могут подключиться к совместной работе и предлагать свои изменения. А редактор без лишних хлопот может безопасно принимать и контролировать все изменения в документации.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="read-the-docs">
+<h2>Работа с Read The Docs<a class="headerlink" href="#read-the-docs" title="Permalink to this headline">¶</a></h2>
+<p>Read the Docs (<a class="reference external" href="https://readthedocs.org">https://readthedocs.org</a>) служит для хранения и публикации документации, позволяет легко в ней ориентироваться и делает её доступной для полноценного поиска. Можно импортировать документацию из проекта, используя любую известную систему контроля версий: Mercurial, Git, Subversion и Bazaar.</p>
+<p>Read The Docs поддерживает webhooks , так что документация может быть обновлена сразу после добавления в репозиторий нового кода. Также есть поддержка версий, поэтому можно собирать отдельные варианты (в том числе отдельные локализации) документации для тэгов и веток, которые есть в репозитории.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://readthedocs.org">Сайт  Read the Docs</a></li>
+<li><a class="reference external" href="http://read-the-docs.readthedocs.org/en/latest/index.html">Документация Read the Docs</a></li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/lr-img-001.png"><img alt="Read the Docs" src="_images/lr-img-001.png" style="width: 379.6px; height: 247.2px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/lr-img-004.png"><img alt="Read the Docs" src="_images/lr-img-004.png" style="width: 379.6px; height: 247.2px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/lr-img-005.png"><img alt="Read the Docs" src="_images/lr-img-005.png" style="width: 379.6px; height: 247.2px;" /></a>
+</div>
+<div class="section" id="id14">
+<h3>Регистрация<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<p>Read the Docs полностью бесплатен, регистрация на нём не занимает много времени.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-001.png"><img alt="Read the Docs: Регистрация." src="_images/rtd-img-001.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+</div>
+<div class="section" id="id15">
+<h3>Привязка к GitHub<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>После регистрации можно привязать свой аккаунт на GitHub или Bitbucket.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-002.png"><img alt="Read the Docs: Привязка к GitHub." src="_images/rtd-img-002.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-003.png"><img alt="Read the Docs: Привязка к GitHub." src="_images/rtd-img-003.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-004.png"><img alt="Read the Docs: Привязка к GitHub." src="_images/rtd-img-004.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+</div>
+<div class="section" id="id16">
+<h3>Создание проекта<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<p>Прежде чем выгрузить свой проект на Read the Docs, его необходимо создать и загрузить на GitHub. Структура репозитория должна содержать папку <tt class="docutils literal"><span class="pre">docs</span></tt>, в которой и будет находиться проект Sphinx (т.е. команду <tt class="docutils literal"><span class="pre">sphinx-quickstart</span></tt> нужно запускать в папке <tt class="docutils literal"><span class="pre">docs</span></tt>).</p>
+<div class="highlight-python"><div class="highlight"><pre>$ cd /path/to/project
+$ mkdir docs
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>$ cd docs
+$ sphinx-quickstart
+$ make html
+</pre></div>
+</div>
+<p>После создания Sphinx-проекта и генерации документации, загружаем репозиторий на GitHub.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-005.png"><img alt="Read the Docs: Выгрузка проекта на GitHub." src="_images/rtd-img-005.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+</div>
+<div class="section" id="id17">
+<h3>Импорт проекта<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p>После создания проекта и выгрузки его на GitHub в панели управления Read the Docs нажимаем <tt class="docutils literal"><span class="pre">Import</span> <span class="pre">a</span> <span class="pre">project</span></tt>.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-006.png"><img alt="Read the Docs: Импорт проекта." src="_images/rtd-img-006.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-007.png"><img alt="Read the Docs: Импорт проекта." src="_images/rtd-img-007.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<p>Синхронизируемся с GitHub и выбираем репозиторий, документация из которого будет опубликована на Read the Docs. Нажимаем кнопку <tt class="docutils literal"><span class="pre">Create</span></tt>.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-008.png"><img alt="Read the Docs: Импорт проекта." src="_images/rtd-img-008.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-009.png"><img alt="Read the Docs: Импорт проекта." src="_images/rtd-img-009.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<p>Далее будет предложено выбрать <em>Имя проекта</em> (это будет часть URL-адреса документации <em>Имя-проекта.readthedocs.org</em>), <em>Тип репозитория</em> и также можно установить галочку <em>Edit advanced project options</em> для включения расширенных настроек.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-010.png"><img alt="Read the Docs: Импорт проекта." src="_images/rtd-img-010.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<p>При включении расширенных настроек на следующей странице будет предложено дать расширенное описание проекта и выбрать локализацию. Выбор локализации позволяет создавать мультиязычную документацию.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-011.png"><img alt="Read the Docs: Импорт проекта." src="_images/rtd-img-011.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<p>Дальше будет предложено выбрать ещё ряд настроек таких, как версия интерпритатора (я предпочитаю собирать 3-й версией, меньше проблем с кириллицей), ветку репозитория, на основе которой будет сгенерирована версия руководства, а также стандартную версию руководства, на которую будет происходить перенаправление по умолчанию.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-012.png"><img alt="Read the Docs: Импорт проекта." src="_images/rtd-img-012.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<p>После выбора всех настроек будет произведена первая сборка руководства.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-013.png"><img alt="Read the Docs: Импорт проекта." src="_images/rtd-img-013.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<p>Так выглядит стандартная тема оформления Read the Docs, при желании можно использовать любую другую (см. <a class="reference internal" href="sphinx.html#html-theme-label"><em>Смена HTML-темы</em></a>):</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-014.png"><img alt="Read the Docs: Импорт проекта." src="_images/rtd-img-014.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+</div>
+<div class="section" id="id18">
+<h3>Автоматическая сборка<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<p>Для включения автоматической сборки документации при обновлении репозитория GitHub, перейдите в репозитории проекта на GitHub в раздел <tt class="docutils literal"><span class="pre">Settings</span></tt>.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-015.png"><img alt="Read the Docs: Автоматическая сборка." src="_images/rtd-img-015.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<p>Выберите пункт <tt class="docutils literal"><span class="pre">Webhooks</span> <span class="pre">&amp;</span> <span class="pre">Services</span></tt> и добавьте сервис Read the Docs.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-016.png"><img alt="Read the Docs: Автоматическая сборка." src="_images/rtd-img-016.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+</div>
+<div class="section" id="id19">
+<h3>Настройка<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<p>В панели управления проектом на Read the Docs в разделе <tt class="docutils literal"><span class="pre">Админ</span></tt> можно изменить настройки проекта, добавить новые версии документации, назначить кураторов и т.д.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-017.png"><img alt="Read the Docs: Админка." src="_images/rtd-img-017.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+</div>
+<div class="section" id="rtd-vers-label">
+<span id="id20"></span><h3>Несколько версий документации<a class="headerlink" href="#rtd-vers-label" title="Permalink to this headline">¶</a></h3>
+<p>Версии документации создаются на основе веток Git-репозитория, подробнее смотрите <a class="reference internal" href="#branch-label"><em>Ветвление</em></a>.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-018.png"><img alt="Read the Docs: Версии." src="_images/rtd-img-018.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+</div>
+<div class="section" id="id21">
+<h3>Ошибки сборки<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p>В некоторых случаях могут возникать ошибки при сборке документации. Причины ошибок могут быть различны. Стандартный вывод интерпритатора содержит подробную информацию обо всех ошибках.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rtd-img-019.png"><img alt="Read the Docs: Ошибки сборки." src="_images/rtd-img-019.png" style="width: 431.2px; height: 252.0px;" /></a>
+</div>
+<p>Наиболее часто возникаю ошибки при сборке PDF. При сборке используется генерация в LaTeX. Стандартные настройки шаблона LaTeX, используемого Read the Docs, не поддерживают кириллицу. Подробнее смотрите раздел <a class="reference internal" href="knownissues.html#pdf-errors-label"><em>Ошибки при сборке PDF на Read The Docs</em></a>.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Оглавление</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">GitHub и Read The Docs</a><ul>
+<li><a class="reference internal" href="#github">Работа с GitHub</a><ul>
+<li><a class="reference internal" href="#id2">Что такое GitHub</a></li>
+<li><a class="reference internal" href="#id3">Регистрация</a></li>
+<li><a class="reference internal" href="#id4">Создание репозитория</a></li>
+<li><a class="reference internal" href="#fork">Копирование репозитория (Fork)</a></li>
+<li><a class="reference internal" href="#pull-requests">Pull Requests</a><ul>
+<li><a class="reference internal" href="#id6">Принятие Pull Requests</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#branch-label">Ветвление</a></li>
+<li><a class="reference internal" href="#id10">Обход блокировки GitHub</a></li>
+<li><a class="reference internal" href="#id11">GitHub и совместная работа над документацией</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#read-the-docs">Работа с Read The Docs</a><ul>
+<li><a class="reference internal" href="#id14">Регистрация</a></li>
+<li><a class="reference internal" href="#id15">Привязка к GitHub</a></li>
+<li><a class="reference internal" href="#id16">Создание проекта</a></li>
+<li><a class="reference internal" href="#id17">Импорт проекта</a></li>
+<li><a class="reference internal" href="#id18">Автоматическая сборка</a></li>
+<li><a class="reference internal" href="#id19">Настройка</a></li>
+<li><a class="reference internal" href="#rtd-vers-label">Несколько версий документации</a></li>
+<li><a class="reference internal" href="#id21">Ошибки сборки</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Предыдущий раздел</h4>
+  <p class="topless"><a href="git.html"
+                        title="предыдущая глава">Система управления версиями Git</a></p>
+  <h4>Следующий раздел</h4>
+  <p class="topless"><a href="knownissues.html"
+                        title="следующая глава">Известные проблемы</a></p>
+  <h3>На этой странице</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/rtd-gh.txt"
+           rel="nofollow">Исходный текст</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Быстрый поиск</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Искать" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Введите слова для поиска или имя модуля, класса или функции.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Просмотр</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="knownissues.html" title="Известные проблемы"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="git.html" title="Система управления версиями Git"
+             >previous</a> |</li>
+        <li><a href="index.html">Генератор документации Sphinx 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+    </div>
+  </body>
+</html>

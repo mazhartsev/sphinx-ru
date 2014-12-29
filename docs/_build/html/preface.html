@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Предисловие &mdash; Генератор документации Sphinx 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Генератор документации Sphinx 1.0 documentation" href="index.html" />
+    <link rel="next" title="Русскоязычное сообщество LibreOffice" href="community.html" />
+    <link rel="prev" title="Генератор документации Sphinx" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Просмотр</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="community.html" title="Русскоязычное сообщество LibreOffice"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Генератор документации Sphinx"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Генератор документации Sphinx 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>Предисловие<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>В последнее время в русскоязычном сегменте интернета все реже и реже попадаются толковые статьи. Особенно это касается статей на техническую тему. Многие из них лишь поверхностно касаются озвученных вопросов, даже не предоставляя никаких ссылок на дополнительную информацию.</p>
+<p>С целью хоть чуточку изменить ситуацию в лучшую сторону, я решил задокументировать свой опыт в виде монолитного руководства. Конечно, рассмотреть абсолютно все аспекты не представляется возможным. Поэтому такие места снабжены ссылками на другие источники.</p>
+<p>Несмотря на благие намерения, данное руководство можно улучшить и дополнить. Критика, замечания и предложения приветствуются. Также буду рад любому сотрудничеству. Пишите мне на почту (см. <a class="reference internal" href="#id9">Обратная связь</a>) или отправляйте Pull Requests (см. <a class="reference internal" href="rtd-gh.html#pull-requests"><em>Pull Requests</em></a>).</p>
+<div class="section" id="id2">
+<h2>О чём данное руководство?<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Данное руководство посвящено процессу генерации документации с помощью связки reStructuredText, Python Sphinx, GitHub и сервиса Read the Docs. Ключевую роль в этой связке играет генератор документации Python Sphinx, разработанный для документирования языка программирования Python, но активно прижившегося и в других проектах.</p>
+<p>Sphinx использует облегченный язык разметки reStructuredText, с помощью которого можно создавать текстовые документы с четкой структурой. В дальнейшем, такие документы могут быть преобразованы в любой другой формат: HTML, LaTeX, ODT, ePub, man и другие. Sphinx расширяет возможности reStructuredText и упрощает процесс генерации в различные форматы.</p>
+<p>GitHub позволяет организовать совместную работу над документацией и значительно упрощает процесс отслеживания изменений. Сервис Read the Docs предоставляет бесплатную площадку для публикации документации, сгенерированной с помощью Sphinx. Он автоматизирует процесс создания и загрузки Sphinx-документации после каждой фиксации изменений на GitHub.</p>
+</div>
+<div class="section" id="sphinx">
+<h2>Почему именно Sphinx?<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h2>
+<p>На данный момент я состою в русскоязычном сообществе LibreOffice и курирую работу над написанием и оформлением официальной русскоязычной документации по офисному пакету. У меня большой опыт работы со сложными документами. Я занимался версткой документов и с помощью обычных офисных пакетов, и с помощью LaTeX.</p>
+<p>Офисные пакеты хорошо справляются со сложной документацией, они достаточно просты для обычных пользователей, но очень плохо приспособлены для совместной работы. Конечно, LibreOffice имеет встроенные функции контроля версий документов, записи изменений, имеется отличная функция «Составные документы», которая позволяет обеспечить одновременную совместную работу над сложными документами. Но все это не даёт той гибкости, которая есть у систем управления версиями файлов таких, как, например, Git.</p>
+<p>LaTeX лишен многих недостатков офисных пакетов, обладает потрясающим качеством генерации документов, но имеет высокий входной порог. Последнее обстоятельство затрудняет совместную работу и во многом перекладывает значительную часть работы на плечи редактора.</p>
+<p>Sphinx совмещает в себе качество LaTeX и простоту офисных пакетов. Для совместной работы достаточно иметь обыкновенный текстовый редактор, что освобождает от привязки к каким-либо платформам,  избавляет от установки громоздких программ и значительно упрощает работу редактора по оформлению и генерации документации.</p>
+<p>В связке Sphinx с  GitHub и Read the Docs упрощается процесс отслеживания изменений в документации и её публикация.</p>
+</div>
+<div class="section" id="id3">
+<h2>Структура книги<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>В главе «<a class="reference internal" href="sphinx.html#sphinx-chapter"><em>Генератор документации Sphinx</em></a>» описана установка и основные настройки Sphinx.</p>
+<p>В главе «<a class="reference internal" href="rst-markup.html#rst-murkup-label"><em>Стандартный синтаксис разметки reStructuredText</em></a>» приведен стандартный синтаксис разметки reStructuredText. Глава «<a class="reference internal" href="sphinx-markup.html#sphinx-murkup"><em>Конструкции разметки Sphinx</em></a>» содержит описание дополнительных конструкции разметки, вносимых Sphinx. Данные конструкции значительно расширяют функционал reStructuredText, но не поддерживаются стандартной разметкой и поэтому не могут быть применены вне Sphinx.</p>
+<p>Глава «<a class="reference internal" href="git.html#git-chapter"><em>Система управления версиями Git</em></a>» является справочником по основным командам git.</p>
+<p>Глава «<a class="reference internal" href="rtd-gh.html#rtd-gh-chapter"><em>GitHub и Read The Docs</em></a>» рассматривает веб-сервис для хостинга IT-проектов GitHub, сервис Read The Docs и их взаимодействие.</p>
+<p>В главах «<a class="reference internal" href="knownissues.html#knownissues-chapter"><em>Известные проблемы</em></a>» и «<a class="reference internal" href="faq.html#faq-chapter"><em>Часто задаваемые вопросы</em></a>» описаны основные проблемы, с которыми я столкнулся.</p>
+</div>
+<div class="section" id="id4">
+<h2>Рекомендации<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Отдельным авторам и переводчикам документации для работы не нужно иметь установленный Sphinx, а , следовательно, нет необходимости читать многие разделы данного руководства. Им достаточно прочитать раздел <a class="reference internal" href="rst-markup.html#rst-murkup-label"><em>Стандартный синтаксис разметки reStructuredText</em></a> и <a class="reference internal" href="sphinx-markup.html#sphinx-murkup"><em>Конструкции разметки Sphinx</em></a>, чтобы изучить необходимый синтаксис. А также ознакомиться с разделом <a class="reference internal" href="rtd-gh.html#github-work"><em>Работа с GitHub</em></a>. Этого минимума хватит для комфортной работы как самих авторов/переводчиков, так и редакторов.</p>
+<p>Редакторы, для облегчения своей работы, должны дать авторам и переводчикам рекомендации относительно оформления исходного текста, создания закладок и указателей. В качестве примера смотрите раздел <a class="reference internal" href="agreements.html#agreement-label"><em>Соглашения</em></a>.</p>
+</div>
+<div class="section" id="id5">
+<h2>Авторские права<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Руководство распространяется на условиях лицензии «Attribution-ShareAlike» («Атрибуция — На тех же условиях») 4.0 Всемирная (CC BY-SA 4.0) <a class="footnote-reference" href="#id7" id="id6">[1]</a>.</p>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[1]</a></td><td><a class="reference external" href="http://creativecommons.org/licenses/by-sa/4.0/deed.ru">http://creativecommons.org/licenses/by-sa/4.0/deed.ru</a>.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id8">
+<h2>Дата публикации и версия программного обеспечения<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Опубликовано 29 декабря 2014 года. При написании руководства были использованы:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Программа</th>
+<th class="head">Версия</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Sphinx</td>
+<td>1.2.2</td>
+</tr>
+<tr class="row-odd"><td>Git</td>
+<td>2.1.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id9">
+<h2>Обратная связь<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Автор:</th><td class="field-body">Дмитрий Мажарцев</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Контакты:</th><td class="field-body"><a class="reference external" href="mailto:DmitryBowie&#37;&#52;&#48;gmail&#46;com">DmitryBowie<span>&#64;</span>gmail<span>&#46;</span>com</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Блог:</th><td class="field-body"><a class="reference external" href="http://libreoffice.blogspot.ru">http://libreoffice.blogspot.ru</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Адрес:</th><td class="field-body">Волгоград</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Дата:</th><td class="field-body">29 декабря 2014 года</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Оглавление</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Предисловие</a><ul>
+<li><a class="reference internal" href="#id2">О чём данное руководство?</a></li>
+<li><a class="reference internal" href="#sphinx">Почему именно Sphinx?</a></li>
+<li><a class="reference internal" href="#id3">Структура книги</a></li>
+<li><a class="reference internal" href="#id4">Рекомендации</a></li>
+<li><a class="reference internal" href="#id5">Авторские права</a></li>
+<li><a class="reference internal" href="#id8">Дата публикации и версия программного обеспечения</a></li>
+<li><a class="reference internal" href="#id9">Обратная связь</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Предыдущий раздел</h4>
+  <p class="topless"><a href="index.html"
+                        title="предыдущая глава">Генератор документации Sphinx</a></p>
+  <h4>Следующий раздел</h4>
+  <p class="topless"><a href="community.html"
+                        title="следующая глава">Русскоязычное сообщество LibreOffice</a></p>
+  <h3>На этой странице</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/preface.txt"
+           rel="nofollow">Исходный текст</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Быстрый поиск</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Искать" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Введите слова для поиска или имя модуля, класса или функции.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Просмотр</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="community.html" title="Русскоязычное сообщество LibreOffice"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Генератор документации Sphinx"
+             >previous</a> |</li>
+        <li><a href="index.html">Генератор документации Sphinx 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+    </div>
+  </body>
+</html>
