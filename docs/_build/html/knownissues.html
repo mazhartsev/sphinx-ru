@@ -77,9 +77,18 @@
 <p>Многие проблемы с отображением тех или иных фрагментов текста в ePub связаны непосредственно с просмотрщиками электронных книг. Например, плагин к браузеру Firefox для просмотра ePub отлично отображает все элементы. На Android в программе CoolReader некорректно отображаются листинги. В программе FBreader  листинги отображаются хорошо, а вот таблицы сбиваются.</p>
 </div>
 <div class="section" id="read-the-docs">
-<h2>Некорректно отображаются формулы на Read The Docs<a class="headerlink" href="#read-the-docs" title="Ссылка на этот заголовок">¶</a></h2>
+<span id="math-errors2-label"></span><h2>Некорректно отображаются формулы на Read The Docs<a class="headerlink" href="#read-the-docs" title="Ссылка на этот заголовок">¶</a></h2>
 <p>У меня возникли проблемы с отображением формул на Read The Docs при использовании расширения <tt class="docutils literal"><span class="pre">sphinx.ext.mathjax</span></tt>, пересобрав документацию с расширением <tt class="docutils literal"><span class="pre">sphinx.ext.pngmath</span></tt> все стало в порядке. Подробнее смотрите раздел <a class="reference internal" href="sphinx.html#ext-math-label"><em>Режим отображения формул</em></a>.</p>
+<p>Также проблема с отображением формул может появиться при использовании символов греческого алфавита  (α, β и т.д.) внутри формулы. Так как Sphinx использует для набора синтаксис LaTeX, то набирать данные символы надо следующим образом: <tt class="docutils literal"><span class="pre">\alpha</span></tt>, ``      Lambda`` и т.д. (смотрите <a class="reference external" href="http://www.astronet.ru/db/msg/eid/latex%20/greec.html">Перечень команд LaTeX для набора греческих букв</a>).</p>
+<div class="highlight-python"><div class="highlight"><pre>.. math::
+
+   \alpha_t(i) = P(O_1, O_2, … O_t, q_t = S_i \Lambda)
+</pre></div>
 </div>
+<p>Результат:</p>
+<div class="math">
+<p><img src="_images/math/6ae17ae6cc05775c6d6361587baf163c7ed93c89.png" alt="\alpha_t(i) = P(O_1, O_2, … O_t, q_t = S_i \lambda)"/></p>
+</div></div>
 </div>
 
 

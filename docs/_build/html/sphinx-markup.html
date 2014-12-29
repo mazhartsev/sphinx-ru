@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Конструкции разметки Sphinx &mdash; Генератор документации Sphinx 1.0 documentation</title>
+    <title>Конструкции разметки Sphinx &mdash; Документация Генератор документации Sphinx 1.0</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
-    <link rel="top" title="Генератор документации Sphinx 1.0 documentation" href="index.html" />
+    <link rel="top" title="Документация Генератор документации Sphinx 1.0" href="index.html" />
     <link rel="next" title="Система управления версиями Git" href="git.html" />
     <link rel="prev" title="Стандартный синтаксис разметки reStructuredText" href="rst-markup.html" /> 
   </head>
@@ -33,15 +33,15 @@
       <h3>Просмотр</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
+          <a href="genindex.html" title="Алфавитный указатель"
+             accesskey="I">указатель</a></li>
         <li class="right" >
           <a href="git.html" title="Система управления версиями Git"
-             accesskey="N">next</a> |</li>
+             accesskey="N">следующий</a> |</li>
         <li class="right" >
           <a href="rst-markup.html" title="Стандартный синтаксис разметки reStructuredText"
-             accesskey="P">previous</a> |</li>
-        <li><a href="index.html">Генератор документации Sphinx 1.0 documentation</a> &raquo;</li> 
+             accesskey="P">предыдущий</a> |</li>
+        <li><a href="index.html">Документация Генератор документации Sphinx 1.0</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -51,10 +51,10 @@
           <div class="body">
             
   <div class="section" id="sphinx">
-<span id="sphinx-murkup"></span><h1>Конструкции разметки Sphinx<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h1>
+<span id="sphinx-murkup"></span><h1>Конструкции разметки Sphinx<a class="headerlink" href="#sphinx" title="Ссылка на этот заголовок">¶</a></h1>
 <p>Sphinx содержит дополнительные конструкции разметки, значительно расширяющие функционал, но которые не поддерживаются стандартной разметкой reStructuredText.</p>
 <div class="section" id="toctree-label">
-<span id="id1"></span><h2>Автоматическое содержание<a class="headerlink" href="#toctree-label" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Автоматическое содержание<a class="headerlink" href="#toctree-label" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Стандартная разметка <abbr title="reStructuredText">ReST</abbr> поддерживает создание в отдельных документах автоматического содержания на основе заголовков. Sphinx расширяет данную функцию и позволяет автоматически создавать общее оглавление для группы документов.</p>
 <p>Файл <tt class="docutils literal"><span class="pre">index.rst</span></tt> обычно содержит автоматическое оглавление, созданное командой <tt class="docutils literal"><span class="pre">..</span> <span class="pre">toctree::</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. toctree::
@@ -79,7 +79,7 @@
 <p>Подробнее об автоматическом оглавлении в Sphinx смотрите в разделе <a class="reference external" href="http://sphinx-doc.org/markup/toctree.html">«The TOC tree»</a> официальной документации Sphinx.</p>
 </div>
 <div class="section" id="source-code-label">
-<span id="id2"></span><h2>Примеры исходного кода с подсветкой синтаксиса<a class="headerlink" href="#source-code-label" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Примеры исходного кода с подсветкой синтаксиса<a class="headerlink" href="#source-code-label" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Sphinx поддерживает вставку примеров исходного когда с подсветкой синтаксиса на разных языках программирования. Вставка листингов осуществляется командой <tt class="docutils literal"><span class="pre">..</span> <span class="pre">code-block::</span> <span class="pre">&lt;название</span> <span class="pre">яыка&gt;</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. code-block:: python
    :emphasize-lines: 3,5
@@ -116,7 +116,7 @@
 <li><tt class="docutils literal"><span class="pre">:emphasize-lines:</span></tt> — включает подсветку отдельных строк, допускается перечисление одиночных строк через запятую или групп строк через тире.</li>
 </ul>
 <div class="section" id="id3">
-<h3>Вставка примеров кода из файла<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>Вставка примеров кода из файла<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Также Sphinx поддерживает вставку кода непосредственно из файла скрипта:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. literalinclude:: example.rb
   :language: ruby
@@ -132,7 +132,7 @@
 </div>
 </div>
 <div class="section" id="math-insert-label">
-<span id="id4"></span><h2>Вставка формул<a class="headerlink" href="#math-insert-label" title="Permalink to this headline">¶</a></h2>
+<span id="id4"></span><h2>Вставка формул<a class="headerlink" href="#math-insert-label" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Вставка формул в предложение:</p>
 <div class="highlight-python"><div class="highlight"><pre>Формула в предложении :math:`a^2 + b^2 = c^2`.
 </pre></div>
@@ -149,7 +149,7 @@
 <p><img src="_images/math/36bfb9c00a80b23ca3e728c9031fab0468d7a4a7.png" alt="(a + b)^2  &amp;=  (a + b)(a + b) \\
            &amp;=  a^2 + 2ab + b^2"/></p>
 </div><div class="section" id="id5">
-<h3>Нумерация формул<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<h3>Нумерация формул<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Для нумерации формул необходимо использовать параметр <tt class="docutils literal"><span class="pre">:label:</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. math:: e^{i\pi} + 1 = 0
    :label: euler
@@ -163,20 +163,20 @@
 <p>Подробнее смотрите главу <a class="reference external" href="http://sphinx-doc.org/ext/math.html?highlight=math#confval-pngmath_use_preview">Math support in Sphinx</a> официальной документации Sphinx.</p>
 </div>
 <div class="section" id="id6">
-<h3>Отображение формул<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<p>Подробнее смотрите раздел <a class="reference internal" href="sphinx.html#ext-math-label"><em>Режим отображения формул</em></a>.</p>
+<h3>Отображение формул<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h3>
+<p>Подробнее смотрите раздел <a class="reference internal" href="sphinx.html#ext-math-label"><em>Режим отображения формул</em></a>. Также смотрите раздел <a class="reference internal" href="knownissues.html#math-errors2-label"><em>Некорректно отображаются формулы на Read The Docs</em></a>.</p>
 </div>
 <div class="section" id="id7">
-<h3>Вставка графиков<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<h3>Вставка графиков<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Для вставки графиков используются дополнительные расширения, список которых приведен на странице <a class="reference external" href="http://sphinx-doc.org/latest/extensions.html">Sphinx Extensions</a> официальной документации Sphinx.</p>
 <p>Также смотрите раздел <a class="reference internal" href="sphinx.html#ext-label"><em>Подключение расширений</em></a>.</p>
 </div>
 </div>
 <div class="section" id="cross-ref-label">
-<span id="id8"></span><h2>Перекрестные ссылки<a class="headerlink" href="#cross-ref-label" title="Permalink to this headline">¶</a></h2>
+<span id="id8"></span><h2>Перекрестные ссылки<a class="headerlink" href="#cross-ref-label" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Sphinx позволяет создавать перекрестные ссылки между отдельными .rst файлами, подключенными в файле <tt class="docutils literal"><span class="pre">index.rst</span></tt>.</p>
 <div class="section" id="id9">
-<h3>Ссылки на разделы<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<h3>Ссылки на разделы<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Для того, чтобы создать ссылку на другой раздел, необходимо сначала установить закладку перед этим разделом. Например, для ссылки на пункт <a class="reference internal" href="rst-markup.html#table-label"><em>Таблицы</em></a> из раздела <a class="reference internal" href="rst-markup.html#rst-murkup-label"><em>Стандартный синтаксис разметки reStructuredText</em></a> я использовал следующие команды:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. _rst-murkup-label:
 
@@ -199,7 +199,7 @@
 <p>Аналогичным образом осуществляется ссылка на изображения и таблицы. Для формул используется немного иной синтаксис.</p>
 </div>
 <div class="section" id="id10">
-<h3>Ссылки на изображения<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<h3>Ссылки на изображения<a class="headerlink" href="#id10" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Для ссылки на изображение перед ним также надо поставить закладку, которая автоматически будет преобразовываться в подпись изображения:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. _my-favicon:
 
@@ -219,7 +219,7 @@
 </div>
 </div>
 <div class="section" id="id11">
-<h3>Ссылки на таблицы<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<h3>Ссылки на таблицы<a class="headerlink" href="#id11" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Ссылки на таблицы осуществляются по тому же принципу. Сначала перед таблицей устанавливается закладка, которая потом автоматически преобразуется в название таблицы.</p>
 <div class="highlight-python"><div class="highlight"><pre>.. _cvs-table:
 
@@ -239,14 +239,14 @@
 </div>
 </div>
 <div class="section" id="id12">
-<h3>Ссылки на формулы<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<h3>Ссылки на формулы<a class="headerlink" href="#id12" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Ссылка на формулы осуществляется немного иным способом, с помощью команды <tt class="docutils literal"><span class="pre">:eq:</span></tt>. Подробнее смотрите пункт <a class="reference internal" href="#id5">Нумерация формул</a>.</p>
 </div>
 </div>
 <div class="section" id="id13">
-<h2>Дополнительные конструкции<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<h2>Дополнительные конструкции<a class="headerlink" href="#id13" title="Ссылка на этот заголовок">¶</a></h2>
 <div class="section" id="id14">
-<h3>Глоссарий<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<h3>Глоссарий<a class="headerlink" href="#id14" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Sphinx позволяет создавать глоссарий с автоматической сортировкой. Элементы глоссария также автоматически попадают в алфавитный указатель.</p>
 <div class="highlight-python"><div class="highlight"><pre>.. glossary::
    :sorted:
@@ -270,14 +270,14 @@
 <p>За автоматическую сортировку отвечает параметр <tt class="docutils literal"><span class="pre">:sorted:</span></tt>.</p>
 </div>
 <div class="section" id="id15">
-<h3>Аббревиатуры<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<h3>Аббревиатуры<a class="headerlink" href="#id15" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Аббревиатуры вставляются следующим образом, например, <abbr title="last-in, first-out">LIFO</abbr>:</p>
 <div class="highlight-python"><div class="highlight"><pre>:abbr:`LIFO (last-in, first-out)`
 </pre></div>
 </div>
 </div>
 <div class="section" id="menuselect-label">
-<span id="id16"></span><h3>Пункты меню<a class="headerlink" href="#menuselect-label" title="Permalink to this headline">¶</a></h3>
+<span id="id16"></span><h3>Пункты меню<a class="headerlink" href="#menuselect-label" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Для обозначения пунктов меню используются команды <tt class="docutils literal"><span class="pre">menuselection</span></tt> и <tt class="docutils literal"><span class="pre">guilabel</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>:menuselection:`Файл --&gt; Открыть`
 :guilabel:`&amp;Открыть`
@@ -289,7 +289,7 @@
 </ul>
 </div>
 <div class="section" id="today-label">
-<span id="id17"></span><h3>Автозамены Sphinx (Подстановки)<a class="headerlink" href="#today-label" title="Permalink to this headline">¶</a></h3>
+<span id="id17"></span><h3>Автозамены Sphinx (Подстановки)<a class="headerlink" href="#today-label" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Sphinx вводит ряд автозамен, которые не требуют объявления, их значения берутся из конфигурационного файла <tt class="docutils literal"><span class="pre">conf.py</span></tt>.</p>
 <div class="highlight-python"><div class="highlight"><pre>Номер релиза: |release|
 
@@ -300,21 +300,21 @@
 </div>
 <p>Номер релиза: 1.0</p>
 <p>Номер версии: 1.0</p>
-<p>Текущая дата: December 29, 2014</p>
+<p>Текущая дата: 29 December 2014</p>
 <p>О настройке этих параметров смотрите в пунктах <a class="reference internal" href="sphinx.html#versions-conf"><em>Версии публикации</em></a> и <a class="reference internal" href="sphinx.html#date-conf"><em>Настройка отображения даты</em></a>.</p>
 </div>
 <div class="section" id="id18">
-<h3>Смотрите также<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<h3>Смотрите также<a class="headerlink" href="#id18" title="Ссылка на этот заголовок">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre>.. seealso:: Блок с дополнительной информацией.
 </pre></div>
 </div>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
+<p class="first admonition-title">См.также</p>
 <p class="last">Блок с дополнительной информацией. См. также <a class="reference internal" href="rst-markup.html#admonitions-label"><em>Блоки примечаний и предупреждений</em></a>.</p>
 </div>
 </div>
 <div class="section" id="id19">
-<h3>Рубрики<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<h3>Рубрики<a class="headerlink" href="#id19" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Рубрики создаютcя командой <tt class="docutils literal"><span class="pre">..</span> <span class="pre">rubric::</span></tt> и используются для создания заголовков, не включаемых в общее содержание.</p>
 <div class="highlight-python"><div class="highlight"><pre>.. rubric:: Пример рубрики
 
@@ -325,7 +325,7 @@
 <p>Текст рубрики</p>
 </div>
 <div class="section" id="id20">
-<h3>Горизонтальный список<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<h3>Горизонтальный список<a class="headerlink" href="#id20" title="Ссылка на этот заголовок">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre>.. hlist::
    :columns: 3
 
@@ -349,12 +349,12 @@
 </ul>
 </td></tr></table>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Примечание</p>
 <p class="last">Здесь приведен не полный перечень дополнительных конструкций Sphinx, подробнее в разделе <a class="reference external" href="http://sphinx-doc.org/markup/inline.html">Inline markup</a> и <a class="reference external" href="http://sphinx-doc.org/markup/para.html">Paragraph-level markup</a> официальной документации Sphinx.</p>
 </div>
 </div>
 <div class="section" id="id21">
-<h3>Документация по языкам программирования<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<h3>Документация по языкам программирования<a class="headerlink" href="#id21" title="Ссылка на этот заголовок">¶</a></h3>
 <p>Для создания документации по языкам программирования Sphinx имеет специальные команды. Например, для описания тех или иных функций языка может использоваться команда <tt class="docutils literal"><span class="pre">..</span> <span class="pre">function::</span></tt> :</p>
 <div class="highlight-python"><div class="highlight"><pre>.. function:: pyfunc()
 
@@ -363,16 +363,16 @@
 </div>
 <dl class="function">
 <dt id="pyfunc">
-<tt class="descname">pyfunc</tt><big>(</big><big>)</big><a class="headerlink" href="#pyfunc" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">pyfunc</tt><big>(</big><big>)</big><a class="headerlink" href="#pyfunc" title="Ссылка на это определение">¶</a></dt>
 <dd><p>Описание функции Python.</p>
 </dd></dl>
 
-<p>Эта команда автоматически добавляет функцию в <a class="reference internal" href="genindex.html"><em>Index</em></a>.</p>
+<p>Эта команда автоматически добавляет функцию в <a class="reference internal" href="genindex.html"><em>Алфавитный указатель</em></a>.</p>
 <p>Похожие конструкции имеются и для других языков программирования, подробнее  смотрите раздел <a class="reference external" href="http://sphinx-doc.org/domains.html">Sphinx Domains</a> официальной документации Sphinx.</p>
 </div>
 </div>
 <div class="section" id="id22">
-<h2>Указатель<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<h2>Указатель<a class="headerlink" href="#id22" title="Ссылка на этот заголовок">¶</a></h2>
 <p>Sphinx автоматически генерирует алфавитный указатель, на основе команд <tt class="docutils literal"><span class="pre">..</span> <span class="pre">glossary::</span></tt>, <tt class="docutils literal"><span class="pre">..</span> <span class="pre">function::</span></tt> и  некоторых других (подробнее  смотрите раздел <a class="reference external" href="http://sphinx-doc.org/domains.html">Sphinx Domains</a> официальной документации Sphinx).</p>
 <p>Но можно и вручную внести элементы в алфавитный указатель с помощью команды <tt class="docutils literal"><span class="pre">..</span> <span class="pre">index::</span></tt>.</p>
 <div class="highlight-python"><div class="highlight"><pre>.. index:: Указатель
@@ -386,9 +386,9 @@
 <div class="highlight-python"><div class="highlight"><pre>.. index:: BNF, grammar, syntax, notation
 </pre></div>
 </div>
-<p>Ссылка на указатель имеет вид <tt class="docutils literal"><span class="pre">:ref:`genindex`</span></tt> (<a class="reference internal" href="genindex.html"><em>Index</em></a>).</p>
+<p>Ссылка на указатель имеет вид <tt class="docutils literal"><span class="pre">:ref:`genindex`</span></tt> (<a class="reference internal" href="genindex.html"><em>Алфавитный указатель</em></a>).</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
+<p class="first admonition-title">Примечание</p>
 <p class="last"><a class="reference external" href="http://python-lab.blogspot.ru/2013/08/sphinx_14.html">Частичный перевод документации Sphinx. Разметка уровня параграфа + Вставка кода</a></p>
 </div>
 </div>
@@ -469,15 +469,15 @@
       <h3>Просмотр</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
+          <a href="genindex.html" title="Алфавитный указатель"
+             >указатель</a></li>
         <li class="right" >
           <a href="git.html" title="Система управления версиями Git"
-             >next</a> |</li>
+             >следующий</a> |</li>
         <li class="right" >
           <a href="rst-markup.html" title="Стандартный синтаксис разметки reStructuredText"
-             >previous</a> |</li>
-        <li><a href="index.html">Генератор документации Sphinx 1.0 documentation</a> &raquo;</li> 
+             >предыдущий</a> |</li>
+        <li><a href="index.html">Документация Генератор документации Sphinx 1.0</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
