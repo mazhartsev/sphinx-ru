@@ -1,6 +1,6 @@
 .. meta::
-   :description: reStructuredText, Python Sphinx, Git, GitHub, Read the Docs
-   :keywords: plaintext, markup language
+   :description: reStructuredText, Python Sphinx Documentation Generator, Git, GitHub, Read the Docs
+   :keywords: plaintext, markup language, documentation generator
 
 .. meta::
    :http-equiv=Content-Type: text/html; charset=utf-8
