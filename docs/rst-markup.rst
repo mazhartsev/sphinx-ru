@@ -717,6 +717,8 @@ Sphinx расширяет возможности создания ссылок, 
    "Gannet Ripple", 1.99, "On a stick!"
 
 
+.. note:: Смотрите также статью `reStructuredText (ReST): Быстрый способ ввода таблиц  <http://librerussia.blogspot.ru/2015/02/restructuredtext-csv-table.html>`_
+
 Ещё один тип таблицы — таблица в виде списка: 
 ::
 
