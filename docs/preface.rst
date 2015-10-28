@@ -82,7 +82,7 @@ Sphinx совмещает в себе качество LaTeX и простоту
 
 :Автор: Дмитрий Мажарцев
 
-:Контакты: LibreRussia@gmail.com
+:Контакты: deemonizer@gmail.com
 
 :Блог:  http://libreoffice.blogspot.ru
 
