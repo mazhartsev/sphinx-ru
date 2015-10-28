@@ -84,7 +84,7 @@ Sphinx совмещает в себе качество LaTeX и простоту
 
 :Контакты: deemonizer@gmail.com
 
-:Блог:  http://libreoffice.blogspot.ru
+:Блог:  http://librerussia.blogspot.ru
 
 :Адрес: Волгоград
 
