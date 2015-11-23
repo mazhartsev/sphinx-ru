@@ -428,12 +428,26 @@ ______
     
     html_theme_path = ['.']
 
-Некоторые темы:
+В Sphinx есть ряд встроенных тем. Для их подключения достаточно написать название темы в строке ``html_theme``, путь указывать не надо. Названия стандартных тем:
+
+* default
+* sphinxdoc
+* scrolls
+* agogo
+* traditional
+* nature
+* haiku
+* pyramid
+
+Некоторые из перечисленных тем поддерживают дополнительные настройки. Подробнее смотрите раздел `HTML theming support <http://sphinx-doc.org/theming.html>`_ официальной документации Sphinx.
+
+.. note:: В Read The Docs при значении  ``html_theme = 'default'`` используется тема Read The Docs.
+
+Некоторые сторонние темы:
 
 * `Read the Docs Theme <https://github.com/snide/sphinx_rtd_theme>`_
 * `Alabaster <https://github.com/bitprophet/alabaster>`_
 * `Sphinx Bootstrap Theme <https://github.com/ryan-roemer/sphinx-bootstrap-theme>`_
-
 
 ______
 

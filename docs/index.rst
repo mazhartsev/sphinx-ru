@@ -19,7 +19,6 @@
    :maxdepth: 3
       
    preface
-   community
    sphinx
    rst-markup
    sphinx-markup
@@ -28,6 +27,7 @@
    knownissues
    faq
    agreements
+   win-sphinx
 
    
 * :ref:`genindex`

@@ -1,63 +1,193 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Генератор документации Sphinx &mdash; Документация Генератор документации Sphinx 1.0</title>
-    
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/translations.js"></script>
-    <link rel="top" title="Документация Генератор документации Sphinx 1.0" href="index.html" />
-    <link rel="next" title="Стандартный синтаксис разметки reStructuredText" href="rst-markup.html" />
-    <link rel="prev" title="Русскоязычное сообщество LibreOffice" href="community.html" /> 
-  </head>
-  <body>
-    <div class="related">
-      <h3>Просмотр</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="Алфавитный указатель"
-             accesskey="I">указатель</a></li>
-        <li class="right" >
-          <a href="rst-markup.html" title="Стандартный синтаксис разметки reStructuredText"
-             accesskey="N">следующий</a> |</li>
-        <li class="right" >
-          <a href="community.html" title="Русскоязычное сообщество LibreOffice"
-             accesskey="P">предыдущий</a> |</li>
-        <li><a href="index.html">Документация Генератор документации Sphinx 1.0</a> &raquo;</li> 
-      </ul>
-    </div>  
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Генератор документации Sphinx &mdash; Генератор документации Sphinx 1.0 documentation</title>
+  
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Генератор документации Sphinx 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Стандартный синтаксис разметки reStructuredText" href="rst-markup.html"/>
+        <link rel="prev" title="Русскоязычное сообщество LibreOffice" href="community.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Генератор документации Sphinx
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preface.html">Предисловие</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community.html">Русскоязычное сообщество LibreOffice</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Генератор документации Sphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Быстрый старт</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Установка</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Создание нового проекта</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#index">Файл index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Генерация документа</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Добавление иллюстраций</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sphinx-autobuild-label">Автоматическая сборка</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">Файл конфигурации</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">Общие настройки</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">Изменение названия и копирайта</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#unicode">Строки Unicode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#versions-conf">Версии публикации</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lang-conf">Настройка локализации</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#date-conf">Настройка отображения даты</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ext-label">Подключение расширений</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ext-math-label">Режим отображения формул</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#html">Генерация в формат HTML</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#favicon">Добавление favicon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#meta">Метаданные. Тег META</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#html-theme-label">Смена HTML-темы</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#latex">Генерация в формат LaTeX</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ltx-label">Преамбула</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id20">Язык и кодировка</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Уровни заголовков в содержании</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#epub">Генерация в формат ePub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Настройка языка</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id23">Отключение копирайта</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#created-using-sphinx">Отключение надписи &#8220;Created using Sphinx&#8221;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#url">Настройка отображения URL-адресов</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id24">Настройка глубины содержания</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">Настройка названия и заголовка</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rst-markup.html">Стандартный синтаксис разметки reStructuredText</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sphinx-markup.html">Конструкции разметки Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="git.html">Система управления версиями Git</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rtd-gh.html">GitHub и Read The Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="knownissues.html">Известные проблемы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Часто задаваемые вопросы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="agreements.html">Соглашения</a></li>
+<li class="toctree-l1"><a class="reference internal" href="win-sphinx.html">Приложение I &#8211; Установка и настройка Python Sphinx в ОС Windows</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Генератор документации Sphinx</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Генератор документации Sphinx</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/sphinx.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
             
   <div class="section" id="sphinx">
-<span id="sphinx-chapter"></span><h1>Генератор документации Sphinx<a class="headerlink" href="#sphinx" title="Ссылка на этот заголовок">¶</a></h1>
+<span id="sphinx-chapter"></span><h1>Генератор документации Sphinx<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h1>
 <p>В главе рассмотрена установка и дополнительные настройки Sphinx, позволяющие задать или изменить параметры генерации документации.</p>
 <div class="section" id="id1">
-<h2>Быстрый старт<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>Быстрый старт<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Sphinx доступен для всех основных операционных систем,  которые поддерживает язык программирования Python.</p>
 <div class="section" id="id2">
-<h3>Установка<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h3>
+<h3>Установка<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p>С помощью pip:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span>
 </pre></div>
@@ -66,24 +196,24 @@
 <div class="highlight-python"><div class="highlight"><pre><span class="n">easy_install</span> <span class="n">sphinx</span>
 </pre></div>
 </div>
-<p>В стандартном репозитории Ubuntu 14.10 есть пакеты <tt class="docutils literal"><span class="pre">python-sphinx</span></tt> и <tt class="docutils literal"><span class="pre">python3-sphinx</span></tt>.</p>
+<p>В стандартном репозитории Ubuntu 14.10 есть пакеты <code class="docutils literal"><span class="pre">python-sphinx</span></code> и <code class="docutils literal"><span class="pre">python3-sphinx</span></code>.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">sphinx</span>
 </pre></div>
 </div>
 <p>Другие способы установки описаны в разделе <a class="reference external" href="http://sphinx-doc.org/latest/install.html">Installing Sphinx</a> официальной документации Sphinx.</p>
 </div>
 <div class="section" id="id3">
-<h3>Создание нового проекта<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h3>
+<h3>Создание нового проекта<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Создадим директорию для нового проекта и перейдем в неё. Для этого в ОС Linux необходимо выполнить следующие команды в терминале:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">mkdir</span> <span class="n">MyProject</span>
 <span class="n">cd</span> <span class="n">MyProject</span><span class="o">/</span>
 </pre></div>
 </div>
-<p>Для инициализации проекта необходимо выполнить команду <tt class="docutils literal"><span class="pre">sphinx-quickstart</span></tt> :</p>
+<p>Для инициализации проекта необходимо выполнить команду <code class="docutils literal"><span class="pre">sphinx-quickstart</span></code> :</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">sphinx</span><span class="o">-</span><span class="n">quickstart</span>
 </pre></div>
 </div>
-<p>Программа задаст ряд вопросов. Все настройки можно будет позже изменить в файле <tt class="docutils literal"><span class="pre">conf.py</span></tt>.</p>
+<p>Программа задаст ряд вопросов. Все настройки можно будет позже изменить в файле <code class="docutils literal"><span class="pre">conf.py</span></code>.</p>
 <div class="highlight-python"><div class="highlight"><pre>&gt; Корневой каталог документации. По умолчанию текущий каталог.
 &gt; Root path for the documentation [.]:
 
@@ -148,7 +278,7 @@
 &gt; Create Windows command file? (Y/n) [y]: n ()
 </pre></div>
 </div>
-<p>После ответа на вопросы будут созданы файлы <tt class="docutils literal"><span class="pre">index.rst</span></tt>, <tt class="docutils literal"><span class="pre">conf.py</span></tt>, <tt class="docutils literal"><span class="pre">Makefile</span></tt>, <tt class="docutils literal"><span class="pre">_build</span></tt>, <tt class="docutils literal"><span class="pre">_static</span></tt>, <tt class="docutils literal"><span class="pre">_templates</span></tt>.</p>
+<p>После ответа на вопросы будут созданы файлы <code class="docutils literal"><span class="pre">index.rst</span></code>, <code class="docutils literal"><span class="pre">conf.py</span></code>, <code class="docutils literal"><span class="pre">Makefile</span></code>, <code class="docutils literal"><span class="pre">_build</span></code>, <code class="docutils literal"><span class="pre">_static</span></code>, <code class="docutils literal"><span class="pre">_templates</span></code>.</p>
 <div class="highlight-python"><div class="highlight"><pre>.
 ├── Makefile
 ├── _build
@@ -171,8 +301,8 @@
 </table>
 </div>
 <div class="section" id="index">
-<h3>Файл index<a class="headerlink" href="#index" title="Ссылка на этот заголовок">¶</a></h3>
-<p>В каталоге проекта находится файл <tt class="docutils literal"><span class="pre">index.rst</span></tt>, который  служит для объединения всех файлов в один проект. <tt class="docutils literal"><span class="pre">index.rst</span></tt> имеет достаточно простую структуру. Если открыть <tt class="docutils literal"><span class="pre">index.rst</span></tt> в простом текстовом редакторе, то будет отображено примерно следующее содержание:</p>
+<h3>Файл index<a class="headerlink" href="#index" title="Permalink to this headline">¶</a></h3>
+<p>В каталоге проекта находится файл <code class="docutils literal"><span class="pre">index.rst</span></code>, который  служит для объединения всех файлов в один проект. <code class="docutils literal"><span class="pre">index.rst</span></code> имеет достаточно простую структуру. Если открыть <code class="docutils literal"><span class="pre">index.rst</span></code> в простом текстовом редакторе, то будет отображено примерно следующее содержание:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. 3 documentation master file, created by
 sphinx-quickstart on Fri Dec 26 19:44:30 2014.
 You can adapt this file completely to your liking, but it should at least
@@ -196,15 +326,15 @@ contain the root `toctree` directive.
  * :ref:`search`
 </pre></div>
 </div>
-<p>Первый абзац, который начинается с двух точек, содержит комментарий. Две идущие подряд точки <tt class="docutils literal"><span class="pre">..</span></tt> перед абзацем означают комментарий. Также они служат объявлением многих команд.</p>
-<p>Подробнее синтаксис разметки рассматривается в следующих главах, а пока рассмотрим директиву <tt class="docutils literal"><span class="pre">..</span> <span class="pre">toctree::</span></tt>. Данная директива объединяет отдельные файлы в единый проект.</p>
-<p>Содержимое <tt class="docutils literal"><span class="pre">index.rst</span></tt> не должно включать много информации и в нём обязательно должна присутствовать директива <tt class="docutils literal"><span class="pre">..</span> <span class="pre">toctree::</span></tt>.</p>
-<p>Чтобы включить в проект другие файлы, необходимо прописать названия этих файлов в <tt class="docutils literal"><span class="pre">..</span> <span class="pre">toctree::</span></tt>. Для примера создадим в корне проекта файл <tt class="docutils literal"><span class="pre">example1.rst</span></tt> и <tt class="docutils literal"><span class="pre">example2.rst</span></tt> со следующим содержанием:</p>
+<p>Первый абзац, который начинается с двух точек, содержит комментарий. Две идущие подряд точки <code class="docutils literal"><span class="pre">..</span></code> перед абзацем означают комментарий. Также они служат объявлением многих команд.</p>
+<p>Подробнее синтаксис разметки рассматривается в следующих главах, а пока рассмотрим директиву <code class="docutils literal"><span class="pre">..</span> <span class="pre">toctree::</span></code>. Данная директива объединяет отдельные файлы в единый проект.</p>
+<p>Содержимое <code class="docutils literal"><span class="pre">index.rst</span></code> не должно включать много информации и в нём обязательно должна присутствовать директива <code class="docutils literal"><span class="pre">..</span> <span class="pre">toctree::</span></code>.</p>
+<p>Чтобы включить в проект другие файлы, необходимо прописать названия этих файлов в <code class="docutils literal"><span class="pre">..</span> <span class="pre">toctree::</span></code>. Для примера создадим в корне проекта файл <code class="docutils literal"><span class="pre">example1.rst</span></code> и <code class="docutils literal"><span class="pre">example2.rst</span></code> со следующим содержанием:</p>
 <div class="highlight-python"><div class="highlight"><pre>Это пример
 ==========
 </pre></div>
 </div>
-<p>Теперь включим их в проект в файле <tt class="docutils literal"><span class="pre">index.rst</span></tt>, добавив названия файлов к директиве <tt class="docutils literal"><span class="pre">..</span> <span class="pre">toctree::</span></tt>.</p>
+<p>Теперь включим их в проект в файле <code class="docutils literal"><span class="pre">index.rst</span></code>, добавив названия файлов к директиве <code class="docutils literal"><span class="pre">..</span> <span class="pre">toctree::</span></code>.</p>
 <div class="highlight-python"><div class="highlight"><pre>Оглавление:
 
 .. toctree::
@@ -214,35 +344,35 @@ contain the root `toctree` directive.
    example2
 </pre></div>
 </div>
-<p>Обратите внимание, что название файла пишется без расширения. Также важен отступ и пустая строка. Подробнее директива <tt class="docutils literal"><span class="pre">..</span> <span class="pre">toctree::</span></tt> рассматривается в разделе <a class="reference internal" href="sphinx-markup.html#toctree-label"><em>Автоматическое содержание</em></a> главы <a class="reference internal" href="sphinx-markup.html#sphinx-murkup"><em>Конструкции разметки Sphinx</em></a>.</p>
-<p>Сохраним <tt class="docutils literal"><span class="pre">index.rst</span></tt> и произведем генерацию документа в формат HTML.</p>
+<p>Обратите внимание, что название файла пишется без расширения. Также важен отступ и пустая строка. Подробнее директива <code class="docutils literal"><span class="pre">..</span> <span class="pre">toctree::</span></code> рассматривается в разделе <a class="reference internal" href="sphinx-markup.html#toctree-label"><span>Автоматическое содержание</span></a> главы <a class="reference internal" href="sphinx-markup.html#sphinx-murkup"><span>Конструкции разметки Sphinx</span></a>.</p>
+<p>Сохраним <code class="docutils literal"><span class="pre">index.rst</span></code> и произведем генерацию документа в формат HTML.</p>
 </div>
 <div class="section" id="id6">
-<h3>Генерация документа<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Для генерации документации в HTML формат необходимо выполнить в командной строке команду  <tt class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></tt>. Аналогичным образом можно выполнить генерацию в другие форматы, например, <tt class="docutils literal"><span class="pre">make</span> <span class="pre">epub</span></tt>.</p>
+<h3>Генерация документа<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Для генерации документации в HTML формат необходимо выполнить в командной строке команду  <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code>. Аналогичным образом можно выполнить генерацию в другие форматы, например, <code class="docutils literal"><span class="pre">make</span> <span class="pre">epub</span></code>.</p>
 <div class="highlight-python"><div class="highlight"><pre>cd MyProject/
 make html
 </pre></div>
 </div>
-<p>Произойдет сборка HTML, выходные файлы будут помещены в директорию <tt class="docutils literal"><span class="pre">_build/html/</span></tt>. Перейдем в неё и откроем файл <tt class="docutils literal"><span class="pre">index.html</span></tt> в браузере.</p>
+<p>Произойдет сборка HTML, выходные файлы будут помещены в директорию <code class="docutils literal"><span class="pre">_build/html/</span></code>. Перейдем в неё и откроем файл <code class="docutils literal"><span class="pre">index.html</span></code> в браузере.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="_images/sphinx-screen-001.png"><img alt="_images/sphinx-screen-001.png" src="_images/sphinx-screen-001.png" style="width: 386.5px; height: 254.0px;" /></a>
+<a class="reference internal image-reference" href="_images/sphinx-screen-001.png"><img alt="_images/sphinx-screen-001.png" src="_images/sphinx-screen-001.png" /></a>
 </div>
 <p>Получив совсем немного исходных данных, Sphinx сумел создать нечто большее. Мы получили несложную компоновку, содержащую информацию о документации проекта, раздел поиска, содержание, заметки об авторских правах, включая имя и дату, а также нумерацию страниц.</p>
 <p>Обратите внимание на раздел поиска: Sphinx проиндексировал все файлы и с помощью JavaScript создал статический сайт, на котором можно искать нужную информацию.</p>
 <p>На снимке показана стандартная тема оформления документации. Она может быть изменена. Также можно настроить локализацию и прочие параметры.</p>
-<p>Файл конфигурации <tt class="docutils literal"><span class="pre">conf.py</span></tt>  позволяет  настроить много дополнительных параметров генерации документации.</p>
+<p>Файл конфигурации <code class="docutils literal"><span class="pre">conf.py</span></code>  позволяет  настроить много дополнительных параметров генерации документации.</p>
 </div>
 <div class="section" id="id7">
-<h3>Добавление иллюстраций<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Для добавления изображений в документы, необходимо предварительно поместить изображения в папку <tt class="docutils literal"><span class="pre">_static</span></tt>. В файл изображения добавляются директивой <tt class="docutils literal"><span class="pre">..</span> <span class="pre">image::</span></tt> или <tt class="docutils literal"><span class="pre">..</span> <span class="pre">figure::</span></tt>:</p>
+<h3>Добавление иллюстраций<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Для добавления изображений в документы, необходимо предварительно поместить изображения в папку <code class="docutils literal"><span class="pre">_static</span></code>. В файл изображения добавляются директивой <code class="docutils literal"><span class="pre">..</span> <span class="pre">image::</span></code> или <code class="docutils literal"><span class="pre">..</span> <span class="pre">figure::</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre>.. image:: _static/favicon.png
 </pre></div>
 </div>
-<p>Подробнее смотрите раздел <a class="reference internal" href="rst-markup.html#img-label"><em>Изображения и иллюстрации</em></a>.</p>
+<p>Подробнее смотрите раздел <a class="reference internal" href="rst-markup.html#img-label"><span>Изображения и иллюстрации</span></a>.</p>
 </div>
 <div class="section" id="sphinx-autobuild-label">
-<span id="id8"></span><h3>Автоматическая сборка<a class="headerlink" href="#sphinx-autobuild-label" title="Ссылка на этот заголовок">¶</a></h3>
+<span id="id8"></span><h3>Автоматическая сборка<a class="headerlink" href="#sphinx-autobuild-label" title="Permalink to this headline">¶</a></h3>
 <p>Для автоматической сборки документации используйте <a class="reference external" href="https://pypi.python.org/pypi/sphinx-autobuild/0.2.3">sphinx-autobuild</a>.</p>
 <p>Для установки выполните команду:</p>
 <div class="highlight-python"><div class="highlight"><pre>pip install https://github.com/lepture/python-livereload/archive/master.zip
@@ -261,7 +391,7 @@ make html
 <div class="highlight-python"><div class="highlight"><pre>sphinx-autobuild docs docs/_build/html
 </pre></div>
 </div>
-<p>Посмотреть сгенерированную документацию можно открыв в браузере адрес <tt class="docutils literal"><span class="pre">http://127.0.0.1:8000</span></tt>.</p>
+<p>Посмотреть сгенерированную документацию можно открыв в браузере адрес <code class="docutils literal"><span class="pre">http://127.0.0.1:8000</span></code>.</p>
 <p>Для интеграции в Makefile добавьте цель:</p>
 <div class="highlight-python"><div class="highlight"><pre>livehtml:
 sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
@@ -272,14 +402,14 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 <hr class="docutils" />
 <div class="section" id="id10">
-<h2>Файл конфигурации<a class="headerlink" href="#id10" title="Ссылка на этот заголовок">¶</a></h2>
-<p>Все настройки сборки документации находятся в файле <tt class="docutils literal"><span class="pre">conf.py</span></tt> в корне проекта Sphinx.</p>
+<h2>Файл конфигурации<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>Все настройки сборки документации находятся в файле <code class="docutils literal"><span class="pre">conf.py</span></code> в корне проекта Sphinx.</p>
 </div>
 <div class="section" id="id11">
-<h2>Общие настройки<a class="headerlink" href="#id11" title="Ссылка на этот заголовок">¶</a></h2>
-<p>Общие настройки задаются в разделе <tt class="docutils literal"><span class="pre">General</span> <span class="pre">configuration</span></tt> файла <tt class="docutils literal"><span class="pre">conf.py</span></tt>.</p>
+<h2>Общие настройки<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>Общие настройки задаются в разделе <code class="docutils literal"><span class="pre">General</span> <span class="pre">configuration</span></code> файла <code class="docutils literal"><span class="pre">conf.py</span></code>.</p>
 <div class="section" id="id12">
-<h3>Изменение названия и копирайта<a class="headerlink" href="#id12" title="Ссылка на этот заголовок">¶</a></h3>
+<h3>Изменение названия и копирайта<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># General information about the project.</span>
 <span class="n">project</span> <span class="o">=</span> <span class="s">&#39;Sphinx-ru&#39;</span>
 <span class="n">copyright</span> <span class="o">=</span> <span class="s">&#39;2014, Dmitry Mazhartsev&#39;</span>
@@ -287,16 +417,16 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 </div>
 <div class="section" id="unicode">
-<span id="unicode-label"></span><h3>Строки Unicode<a class="headerlink" href="#unicode" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Использование кириллических символов в названиях проекта и других строках, может приводить к ошибкам генерации. В версии Sphinx для Python 3  таких проблем не наблюдается. В версии для Python 2.7 перед каждой кириллической строкой необходимо ставить  <tt class="docutils literal"><span class="pre">u</span></tt>.</p>
+<span id="unicode-label"></span><h3>Строки Unicode<a class="headerlink" href="#unicode" title="Permalink to this headline">¶</a></h3>
+<p>Использование кириллических символов в названиях проекта и других строках, может приводить к ошибкам генерации. В версии Sphinx для Python 3  таких проблем не наблюдается. В версии для Python 2.7 перед каждой кириллической строкой необходимо ставить  <code class="docutils literal"><span class="pre">u</span></code>.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">project</span> <span class="o">=</span> <span class="s">u&#39;Мой проект&#39;</span>
 <span class="n">copyright</span> <span class="o">=</span> <span class="s">u&#39;2014, Дмитрий Мажарцев&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="versions-conf">
-<span id="id13"></span><h3>Версии публикации<a class="headerlink" href="#versions-conf" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Изменить параметры <tt class="docutils literal"><span class="pre">version</span></tt> и <tt class="docutils literal"><span class="pre">release</span></tt>:</p>
+<span id="id13"></span><h3>Версии публикации<a class="headerlink" href="#versions-conf" title="Permalink to this headline">¶</a></h3>
+<p>Изменить параметры <code class="docutils literal"><span class="pre">version</span></code> и <code class="docutils literal"><span class="pre">release</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># The short X.Y version.</span>
 <span class="n">version</span> <span class="o">=</span> <span class="s">&#39;1&#39;</span>
 <span class="c"># The full version, including alpha/beta/rc tags.</span>
@@ -305,30 +435,30 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 </div>
 <div class="section" id="lang-conf">
-<span id="id14"></span><h3>Настройка локализации<a class="headerlink" href="#lang-conf" title="Ссылка на этот заголовок">¶</a></h3>
+<span id="id14"></span><h3>Настройка локализации<a class="headerlink" href="#lang-conf" title="Permalink to this headline">¶</a></h3>
 <p>Многие шаблоны тем имеют несколько локализаций, в зависимости от этого некоторые элементы оформления могут быть автоматически локализованы, например, заголовки блоков предупреждений меняются в зависимости от языка.</p>
-<p>Настройки языка задаются в разделе <tt class="docutils literal"><span class="pre">General</span> <span class="pre">configuration</span></tt> файла <tt class="docutils literal"><span class="pre">conf.py</span></tt> в строке <tt class="docutils literal"><span class="pre">language</span></tt>:</p>
+<p>Настройки языка задаются в разделе <code class="docutils literal"><span class="pre">General</span> <span class="pre">configuration</span></code> файла <code class="docutils literal"><span class="pre">conf.py</span></code> в строке <code class="docutils literal"><span class="pre">language</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">language</span> <span class="o">=</span> <span class="s">&#39;ru&#39;</span>
 </pre></div>
 </div>
-<p>Для корректной генерации ePub в разделе <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Epub</span> <span class="pre">output</span></tt> файла <tt class="docutils literal"><span class="pre">conf.py</span></tt> есть строка <tt class="docutils literal"><span class="pre">epub_language</span></tt> :</p>
+<p>Для корректной генерации ePub в разделе <code class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Epub</span> <span class="pre">output</span></code> файла <code class="docutils literal"><span class="pre">conf.py</span></code> есть строка <code class="docutils literal"><span class="pre">epub_language</span></code> :</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">epub_language</span> <span class="o">=</span> <span class="s">&#39;ru&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="date-conf">
-<span id="id15"></span><h3>Настройка отображения даты<a class="headerlink" href="#date-conf" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Формат отображения даты зависит от выбранного языка (см. <a class="reference internal" href="#lang-conf"><em>Настройка локализации</em></a>). Но можно задать и собственный формат.</p>
+<span id="id15"></span><h3>Настройка отображения даты<a class="headerlink" href="#date-conf" title="Permalink to this headline">¶</a></h3>
+<p>Формат отображения даты зависит от выбранного языка (см. <a class="reference internal" href="#lang-conf"><span>Настройка локализации</span></a>). Но можно задать и собственный формат.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">today</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
 <span class="n">today_fmt</span> <span class="o">=</span> <span class="s">&#39;%B </span><span class="si">%d</span><span class="s">, %Y&#39;</span>
 </pre></div>
 </div>
-<p>Из этих настроек берется  информация для автозамены <tt class="docutils literal"><span class="pre">|today|</span></tt> (см. <a class="reference internal" href="sphinx-markup.html#today-label"><em>Автозамены Sphinx (Подстановки)</em></a>).</p>
+<p>Из этих настроек берется  информация для автозамены <code class="docutils literal"><span class="pre">|today|</span></code> (см. <a class="reference internal" href="sphinx-markup.html#today-label"><span>Автозамены Sphinx (Подстановки)</span></a>).</p>
 </div>
 <div class="section" id="ext-label">
-<span id="id16"></span><h3>Подключение расширений<a class="headerlink" href="#ext-label" title="Ссылка на этот заголовок">¶</a></h3>
+<span id="id16"></span><h3>Подключение расширений<a class="headerlink" href="#ext-label" title="Permalink to this headline">¶</a></h3>
 <p>Список расширений для Sphinx приведен на странице <a class="reference external" href="http://sphinx-doc.org/latest/extensions.html">Sphinx Extensions</a> официальной документации.</p>
-<p>Подключаемые расширения прописываются в файле <tt class="docutils literal"><span class="pre">conf.py</span></tt>, в строке <tt class="docutils literal"><span class="pre">extensions</span></tt>.</p>
+<p>Подключаемые расширения прописываются в файле <code class="docutils literal"><span class="pre">conf.py</span></code>, в строке <code class="docutils literal"><span class="pre">extensions</span></code>.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
 <span class="s">&#39;sphinx.ext.mathjax&#39;</span><span class="p">,</span>
 <span class="s">&#39;sphinx.ext.graphviz&#39;</span><span class="p">,</span>
@@ -337,10 +467,10 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 </div>
 <div class="section" id="ext-math-label">
-<span id="id17"></span><h3>Режим отображения формул<a class="headerlink" href="#ext-math-label" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Формулы в Sphinx могут отображаться с помощью одного из двух расширений: <tt class="docutils literal"><span class="pre">sphinx.ext.pngmath</span></tt> или <tt class="docutils literal"><span class="pre">sphinx.ext.mathjax</span></tt>. Первое расширение отображает формулы как изображения в png формате. Другое расширение использует JavaScript библиотеку <tt class="docutils literal"><span class="pre">mathjax</span></tt> для отображения формул.</p>
-<p>Я предпочитаю использовать <tt class="docutils literal"><span class="pre">sphinx.ext.mathjax</span></tt>, так как оно позволяет масштабировать формулы без потери качества отображения. Но для сервиса Read The Docs нужно использовать <tt class="docutils literal"><span class="pre">sphinx.ext.pngmath</span></tt>.</p>
-<p>Указать Sphinx какое расширение использовать можно в конфигурационном файле <tt class="docutils literal"><span class="pre">conf.py</span></tt>, в строке <tt class="docutils literal"><span class="pre">extensions</span></tt>.</p>
+<span id="id17"></span><h3>Режим отображения формул<a class="headerlink" href="#ext-math-label" title="Permalink to this headline">¶</a></h3>
+<p>Формулы в Sphinx могут отображаться с помощью одного из двух расширений: <code class="docutils literal"><span class="pre">sphinx.ext.pngmath</span></code> или <code class="docutils literal"><span class="pre">sphinx.ext.mathjax</span></code>. Первое расширение отображает формулы как изображения в png формате. Другое расширение использует JavaScript библиотеку <code class="docutils literal"><span class="pre">mathjax</span></code> для отображения формул.</p>
+<p>Я предпочитаю использовать <code class="docutils literal"><span class="pre">sphinx.ext.mathjax</span></code>, так как оно позволяет масштабировать формулы без потери качества отображения. Но для сервиса Read The Docs нужно использовать <code class="docutils literal"><span class="pre">sphinx.ext.pngmath</span></code>.</p>
+<p>Указать Sphinx какое расширение использовать можно в конфигурационном файле <code class="docutils literal"><span class="pre">conf.py</span></code>, в строке <code class="docutils literal"><span class="pre">extensions</span></code>.</p>
 <div class="highlight-python"><div class="highlight"><pre> extensions = [
  &#39;sphinx.ext.mathjax&#39;,
 ]
@@ -353,29 +483,29 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </pre></div>
 </div>
 <div class="admonition warning">
-<p class="first admonition-title">Предупреждение</p>
+<p class="first admonition-title">Warning</p>
 <p class="last">Использовать одновременно оба расширения нельзя.</p>
 </div>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="html">
-<h2>Генерация в формат HTML<a class="headerlink" href="#html" title="Ссылка на этот заголовок">¶</a></h2>
-<p>Настройки генерации в формат HTML задаются в разделе <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">HTML</span> <span class="pre">output</span></tt> файла <tt class="docutils literal"><span class="pre">conf.py</span></tt>.</p>
+<h2>Генерация в формат HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h2>
+<p>Настройки генерации в формат HTML задаются в разделе <code class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">HTML</span> <span class="pre">output</span></code> файла <code class="docutils literal"><span class="pre">conf.py</span></code>.</p>
 <div class="section" id="favicon">
-<h3>Добавление favicon<a class="headerlink" href="#favicon" title="Ссылка на этот заголовок">¶</a></h3>
-<p>В разделе <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">HTML</span> <span class="pre">output</span></tt> раскомментировать строку и прописать путь к файлу favicon:</p>
+<h3>Добавление favicon<a class="headerlink" href="#favicon" title="Permalink to this headline">¶</a></h3>
+<p>В разделе <code class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">HTML</span> <span class="pre">output</span></code> раскомментировать строку и прописать путь к файлу favicon:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">html_favicon</span> <span class="o">=</span> <span class="s">&#39;_static/favicon.ico&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="meta">
-<h3>Метаданные. Тег META<a class="headerlink" href="#meta" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Имеется возможность добавлять метаданные каждой из страниц. Это не относится к настройкам файла <tt class="docutils literal"><span class="pre">conf.py</span></tt>, а добавляется непосредственно в rst файлы  с помощью директивы <tt class="docutils literal"><span class="pre">..</span> <span class="pre">meta::</span></tt>. Подробнее смотрите раздел <a class="reference internal" href="rst-markup.html#meta-label"><em>Метаданные. Тег META</em></a>.</p>
+<h3>Метаданные. Тег META<a class="headerlink" href="#meta" title="Permalink to this headline">¶</a></h3>
+<p>Имеется возможность добавлять метаданные каждой из страниц. Это не относится к настройкам файла <code class="docutils literal"><span class="pre">conf.py</span></code>, а добавляется непосредственно в rst файлы  с помощью директивы <code class="docutils literal"><span class="pre">..</span> <span class="pre">meta::</span></code>. Подробнее смотрите раздел <a class="reference internal" href="rst-markup.html#meta-label"><span>Метаданные. Тег META</span></a>.</p>
 </div>
 <div class="section" id="html-theme-label">
-<span id="id18"></span><h3>Смена HTML-темы<a class="headerlink" href="#html-theme-label" title="Ссылка на этот заголовок">¶</a></h3>
-<p>В строке <tt class="docutils literal"><span class="pre">html_theme</span></tt> указать название используемой темы:</p>
+<span id="id18"></span><h3>Смена HTML-темы<a class="headerlink" href="#html-theme-label" title="Permalink to this headline">¶</a></h3>
+<p>В строке <code class="docutils literal"><span class="pre">html_theme</span></code> указать название используемой темы:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">html_theme</span> <span class="o">=</span> <span class="s">&#39;sphinx_rtd_theme&#39;</span>
 </pre></div>
 </div>
@@ -383,7 +513,23 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 <div class="highlight-python"><div class="highlight"><pre><span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;.&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>Некоторые темы:</p>
+<p>В Sphinx есть ряд встроенных тем. Для их подключения достаточно написать название темы в строке <code class="docutils literal"><span class="pre">html_theme</span></code>, путь указывать не надо. Названия стандартных тем:</p>
+<ul class="simple">
+<li>default</li>
+<li>sphinxdoc</li>
+<li>scrolls</li>
+<li>agogo</li>
+<li>traditional</li>
+<li>nature</li>
+<li>haiku</li>
+<li>pyramid</li>
+</ul>
+<p>Некоторые из перечисленных тем поддерживают дополнительные настройки. Подробнее смотрите раздел <a class="reference external" href="http://sphinx-doc.org/theming.html">HTML theming support</a> официальной документации Sphinx.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">В Read The Docs при значении  <code class="docutils literal"><span class="pre">html_theme</span> <span class="pre">=</span> <span class="pre">'default'</span></code> используется тема Read The Docs.</p>
+</div>
+<p>Некоторые сторонние темы:</p>
 <ul class="simple">
 <li><a class="reference external" href="https://github.com/snide/sphinx_rtd_theme">Read the Docs Theme</a></li>
 <li><a class="reference external" href="https://github.com/bitprophet/alabaster">Alabaster</a></li>
@@ -393,11 +539,11 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 <hr class="docutils" />
 <div class="section" id="latex">
-<h2>Генерация в формат LaTeX<a class="headerlink" href="#latex" title="Ссылка на этот заголовок">¶</a></h2>
-<p>Настройки генерации в формат LaTeX задаются в разделе <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">LaTeX</span> <span class="pre">output</span></tt> файла <tt class="docutils literal"><span class="pre">conf.py</span></tt>.</p>
+<h2>Генерация в формат LaTeX<a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h2>
+<p>Настройки генерации в формат LaTeX задаются в разделе <code class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">LaTeX</span> <span class="pre">output</span></code> файла <code class="docutils literal"><span class="pre">conf.py</span></code>.</p>
 <div class="section" id="ltx-label">
-<span id="id19"></span><h3>Преамбула<a class="headerlink" href="#ltx-label" title="Ссылка на этот заголовок">¶</a></h3>
-<p>В файле <tt class="docutils literal"><span class="pre">conf.py</span></tt> можно указать дополнительные параметры преамбулы:</p>
+<span id="id19"></span><h3>Преамбула<a class="headerlink" href="#ltx-label" title="Permalink to this headline">¶</a></h3>
+<p>В файле <code class="docutils literal"><span class="pre">conf.py</span></code> можно указать дополнительные параметры преамбулы:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Additional stuff for the LaTeX preamble.</span>
 <span class="s">&#39;preamble&#39;</span><span class="p">:</span> <span class="s">&#39;</span><span class="se">\\</span><span class="s">usepackage[utf8]{inputenc}&#39;</span><span class="p">,</span>
 <span class="s">&#39;babel&#39;</span><span class="p">:</span> <span class="s">&#39;</span><span class="se">\\</span><span class="s">usepackage[russian]{babel}&#39;</span><span class="p">,</span>
@@ -409,28 +555,28 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 </div>
 <div class="section" id="id20">
-<h3>Язык и кодировка<a class="headerlink" href="#id20" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Для корректной генерации в  формат LaTeX кириллических документов необходимо указать в файле <tt class="docutils literal"><span class="pre">conf.py</span></tt>  дополнительные параметры преамбулы, смотрите пример в разделе <a class="reference internal" href="#ltx-label"><em>Преамбула</em></a>.</p>
+<h3>Язык и кодировка<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<p>Для корректной генерации в  формат LaTeX кириллических документов необходимо указать в файле <code class="docutils literal"><span class="pre">conf.py</span></code>  дополнительные параметры преамбулы, смотрите пример в разделе <a class="reference internal" href="#ltx-label"><span>Преамбула</span></a>.</p>
 </div>
 <div class="section" id="id21">
-<h3>Уровни заголовков в содержании<a class="headerlink" href="#id21" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Параметр <tt class="docutils literal"><span class="pre">:maxdepth:</span></tt> не распространяется на LaTeX-документы. Глубина оглавления в LaTeX контролируется его внутренним счетчиком, который можно настроить в файле конфигурации Sphinx <tt class="docutils literal"><span class="pre">conf.py</span></tt>, указав в преамбуле значение <tt class="docutils literal"><span class="pre">\setcounter{tocdepth}{2}</span></tt>.</p>
+<h3>Уровни заголовков в содержании<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p>Параметр <code class="docutils literal"><span class="pre">:maxdepth:</span></code> не распространяется на LaTeX-документы. Глубина оглавления в LaTeX контролируется его внутренним счетчиком, который можно настроить в файле конфигурации Sphinx <code class="docutils literal"><span class="pre">conf.py</span></code>, указав в преамбуле значение <code class="docutils literal"><span class="pre">\setcounter{tocdepth}{2}</span></code>.</p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="epub">
-<h2>Генерация в формат ePub<a class="headerlink" href="#epub" title="Ссылка на этот заголовок">¶</a></h2>
-<p>Для генерации в формат ePub используются настройки <tt class="docutils literal"><span class="pre">conf.py</span></tt> в разделе <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Epub</span> <span class="pre">output</span></tt>. Также частично используются настройки из раздела генерации в HTML <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">HTML</span> <span class="pre">output</span></tt>.</p>
+<h2>Генерация в формат ePub<a class="headerlink" href="#epub" title="Permalink to this headline">¶</a></h2>
+<p>Для генерации в формат ePub используются настройки <code class="docutils literal"><span class="pre">conf.py</span></code> в разделе <code class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Epub</span> <span class="pre">output</span></code>. Также частично используются настройки из раздела генерации в HTML <code class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">HTML</span> <span class="pre">output</span></code>.</p>
 <div class="section" id="id22">
-<h3>Настройка языка<a class="headerlink" href="#id22" title="Ссылка на этот заголовок">¶</a></h3>
-<p>Для корректной генерации ePub в разделе <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Epub</span> <span class="pre">output</span></tt> файла <tt class="docutils literal"><span class="pre">conf.py</span></tt> есть строка <tt class="docutils literal"><span class="pre">epub_language</span></tt> :</p>
+<h3>Настройка языка<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<p>Для корректной генерации ePub в разделе <code class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">Epub</span> <span class="pre">output</span></code> файла <code class="docutils literal"><span class="pre">conf.py</span></code> есть строка <code class="docutils literal"><span class="pre">epub_language</span></code> :</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">epub_language</span> <span class="o">=</span> <span class="s">&#39;ru</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="id23">
-<h3>Отключение копирайта<a class="headerlink" href="#id23" title="Ссылка на этот заголовок">¶</a></h3>
-<p>В разделе <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">HTML</span> <span class="pre">output</span></tt> раскомментировать и установить значение <tt class="docutils literal"><span class="pre">False</span></tt> строке <tt class="docutils literal"><span class="pre">html_show_copyright</span></tt></p>
+<h3>Отключение копирайта<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<p>В разделе <code class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">HTML</span> <span class="pre">output</span></code> раскомментировать и установить значение <code class="docutils literal"><span class="pre">False</span></code> строке <code class="docutils literal"><span class="pre">html_show_copyright</span></code></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># If true, &quot;(C) Copyright ...&quot; is shown in the HTML footer.</span>
 <span class="c"># Default is True.</span>
 
@@ -439,8 +585,8 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 </div>
 <div class="section" id="created-using-sphinx">
-<h3>Отключение надписи &#8220;Created using Sphinx&#8221;<a class="headerlink" href="#created-using-sphinx" title="Ссылка на этот заголовок">¶</a></h3>
-<p>В разделе <tt class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">HTML</span> <span class="pre">output</span></tt> раскомментировать и установить значение <tt class="docutils literal"><span class="pre">False</span></tt> строке <tt class="docutils literal"><span class="pre">html_show_sphinx</span></tt></p>
+<h3>Отключение надписи &#8220;Created using Sphinx&#8221;<a class="headerlink" href="#created-using-sphinx" title="Permalink to this headline">¶</a></h3>
+<p>В разделе <code class="docutils literal"><span class="pre">Options</span> <span class="pre">for</span> <span class="pre">HTML</span> <span class="pre">output</span></code> раскомментировать и установить значение <code class="docutils literal"><span class="pre">False</span></code> строке <code class="docutils literal"><span class="pre">html_show_sphinx</span></code></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># If true, &quot;Created using Sphinx&quot; is shown in the HTML footer.</span>
 <span class="c"># Default is True.</span>
 
@@ -449,15 +595,15 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 </div>
 <div class="section" id="url">
-<h3>Настройка отображения URL-адресов<a class="headerlink" href="#url" title="Ссылка на этот заголовок">¶</a></h3>
-<p>URL-адреса могут отображаться в ePub в нескольких режимах: в строке(inline), внизу страницы(footnote) и быть оформлены в виде гиперссылок(no). Для настройки отображения необходимо раскомментировать строку <tt class="docutils literal"><span class="pre">epub_show_urls</span></tt> и установить нужное значение:</p>
+<h3>Настройка отображения URL-адресов<a class="headerlink" href="#url" title="Permalink to this headline">¶</a></h3>
+<p>URL-адреса могут отображаться в ePub в нескольких режимах: в строке(inline), внизу страницы(footnote) и быть оформлены в виде гиперссылок(no). Для настройки отображения необходимо раскомментировать строку <code class="docutils literal"><span class="pre">epub_show_urls</span></code> и установить нужное значение:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># How to display URL addresses: &#39;footnote&#39;, &#39;no&#39;, or &#39;inline&#39;.</span>
 <span class="n">epub_show_urls</span> <span class="o">=</span> <span class="s">&#39;inline&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="id24">
-<h3>Настройка глубины содержания<a class="headerlink" href="#id24" title="Ссылка на этот заголовок">¶</a></h3>
+<h3>Настройка глубины содержания<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
 <p>Раскомментировать и установить нужное значение. По умолчанию в оглавление входят заголовки глубиной до 3-х уровней:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># The depth of the table of contents in toc.ncx.</span>
 <span class="n">epub_tocdepth</span> <span class="o">=</span> <span class="mi">3</span>
@@ -465,7 +611,7 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 </div>
 </div>
 <div class="section" id="id25">
-<h3>Настройка названия и заголовка<a class="headerlink" href="#id25" title="Ссылка на этот заголовок">¶</a></h3>
+<h3>Настройка названия и заголовка<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Bibliographic Dublin Core info.</span>
 <span class="n">epub_title</span> <span class="o">=</span> <span class="s">&#39;Sphinx-ru&#39;</span>
 <span class="n">epub_author</span> <span class="o">=</span> <span class="s">&#39;Dmitry Mazhartsev&#39;</span>
@@ -473,109 +619,76 @@ sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 <span class="n">epub_copyright</span> <span class="o">=</span> <span class="s">&#39;2014, Dmitry Mazhartsev&#39;</span>
 </pre></div>
 </div>
-<p>Для решения проблем с кириллическими строками смотрите раздел <a class="reference internal" href="#unicode-label"><em>Строки Unicode</em></a>.</p>
+<p>Для решения проблем с кириллическими строками смотрите раздел <a class="reference internal" href="#unicode-label"><span>Строки Unicode</span></a>.</p>
 </div>
 </div>
 </div>
 
 
+           </div>
           </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Оглавление</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Генератор документации Sphinx</a><ul>
-<li><a class="reference internal" href="#id1">Быстрый старт</a><ul>
-<li><a class="reference internal" href="#id2">Установка</a></li>
-<li><a class="reference internal" href="#id3">Создание нового проекта</a></li>
-<li><a class="reference internal" href="#index">Файл index</a></li>
-<li><a class="reference internal" href="#id6">Генерация документа</a></li>
-<li><a class="reference internal" href="#id7">Добавление иллюстраций</a></li>
-<li><a class="reference internal" href="#sphinx-autobuild-label">Автоматическая сборка</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#id10">Файл конфигурации</a></li>
-<li><a class="reference internal" href="#id11">Общие настройки</a><ul>
-<li><a class="reference internal" href="#id12">Изменение названия и копирайта</a></li>
-<li><a class="reference internal" href="#unicode">Строки Unicode</a></li>
-<li><a class="reference internal" href="#versions-conf">Версии публикации</a></li>
-<li><a class="reference internal" href="#lang-conf">Настройка локализации</a></li>
-<li><a class="reference internal" href="#date-conf">Настройка отображения даты</a></li>
-<li><a class="reference internal" href="#ext-label">Подключение расширений</a></li>
-<li><a class="reference internal" href="#ext-math-label">Режим отображения формул</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#html">Генерация в формат HTML</a><ul>
-<li><a class="reference internal" href="#favicon">Добавление favicon</a></li>
-<li><a class="reference internal" href="#meta">Метаданные. Тег META</a></li>
-<li><a class="reference internal" href="#html-theme-label">Смена HTML-темы</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#latex">Генерация в формат LaTeX</a><ul>
-<li><a class="reference internal" href="#ltx-label">Преамбула</a></li>
-<li><a class="reference internal" href="#id20">Язык и кодировка</a></li>
-<li><a class="reference internal" href="#id21">Уровни заголовков в содержании</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#epub">Генерация в формат ePub</a><ul>
-<li><a class="reference internal" href="#id22">Настройка языка</a></li>
-<li><a class="reference internal" href="#id23">Отключение копирайта</a></li>
-<li><a class="reference internal" href="#created-using-sphinx">Отключение надписи &#8220;Created using Sphinx&#8221;</a></li>
-<li><a class="reference internal" href="#url">Настройка отображения URL-адресов</a></li>
-<li><a class="reference internal" href="#id24">Настройка глубины содержания</a></li>
-<li><a class="reference internal" href="#id25">Настройка названия и заголовка</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="rst-markup.html" class="btn btn-neutral float-right" title="Стандартный синтаксис разметки reStructuredText" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="community.html" class="btn btn-neutral" title="Русскоязычное сообщество LibreOffice" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
-  <h4>Предыдущий раздел</h4>
-  <p class="topless"><a href="community.html"
-                        title="предыдущая глава">Русскоязычное сообщество LibreOffice</a></p>
-  <h4>Следующий раздел</h4>
-  <p class="topless"><a href="rst-markup.html"
-                        title="следующая глава">Стандартный синтаксис разметки reStructuredText</a></p>
-  <h3>На этой странице</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/sphinx.txt"
-           rel="nofollow">Исходный текст</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
-  <h3>Быстрый поиск</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Искать" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Введите слова для поиска или имя модуля, класса или функции.
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
     </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+  </div> 
+
+</footer>
+
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related">
-      <h3>Просмотр</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="Алфавитный указатель"
-             >указатель</a></li>
-        <li class="right" >
-          <a href="rst-markup.html" title="Стандартный синтаксис разметки reStructuredText"
-             >следующий</a> |</li>
-        <li class="right" >
-          <a href="community.html" title="Русскоязычное сообщество LibreOffice"
-             >предыдущий</a> |</li>
-        <li><a href="index.html">Документация Генератор документации Sphinx 1.0</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer">
-    </div>
-  </body>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
 </html>
