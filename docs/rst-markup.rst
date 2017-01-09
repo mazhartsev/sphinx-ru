@@ -37,7 +37,7 @@ ReST аналогичен языку разметки Markdown, но облад�
 ReText
 ~~~~~~
 
-**ReText** (http://sourceforge.net/projects/retext/) — редактор Markdown и reStructuredText для Linux. Есть возможность установки ReText в ОС Windows, инструкция находится `здесь <http://sourceforge.net/p/retext/wiki/Windows%20Install%20of%20ReText/>`_. Для Mac OS X репозиторий `Homebrew <http://brew.sh/>`_: https://github.com/samueljohn/homebrew-python
+**ReText** (https://github.com/retext-project/retext) — редактор Markdown и reStructuredText для Linux. Есть возможность установки ReText в ОС Windows, инструкция находится `здесь <http://sourceforge.net/p/retext/wiki/Windows%20Install%20of%20ReText/>`_. Для Mac OS X репозиторий `Homebrew <http://brew.sh/>`_: https://github.com/samueljohn/homebrew-python
 
 Основные возможности редактора:
 
