@@ -53,6 +53,23 @@ ReText
 
 .. note:: Данное руководство написано с помощью ReText. 
 
+SublimeText
+~~~~~~~~~~~
+
+**SublimeText** (https://www.sublimetext.com/) — универсальный редактор большего количества форматов как для Linux так и для Windows.
+По умолчанию не поддерживает reStructuredText. Но есть специальные плагины:
+
+**Restructured​Text Improved** (https://packagecontrol.io/packages/RestructuredText%20Improved) плагин добавляющий в SublimeText подсветку синтаксиса, 
+а так же возможность перехода по заголовками используя комбинацию :kbd:`Control-R`
+
+**Restructured Text (RST) Snippets** (https://github.com/mgaitan/sublime-rst-completion) плагин добавляющий в SublimeText сниппеты основных конструкций, возможность геренерации Html/Pdf/Docx,
+и самое главное это возможность `удобной работы с таблицами <https://github.com/mgaitan/sublime-rst-completion#magic-tables>`_
+
+**GitGutter** или **Modific** (https://github.com/jisaacks/GitGutter, https://github.com/gornostal/Modific) 
+Данные плагины подсвечивают строки измененные последним коммитом, другими словами diff tools в режиме реального времени.
+
+.. image:: _static/gutter.png
+
 Online reStructuredText editor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
