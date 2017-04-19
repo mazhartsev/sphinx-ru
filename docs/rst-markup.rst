@@ -7,7 +7,7 @@
 .. |time| date:: %H:%M
 
 
-.. _rst-murkup-label:
+.. _rst-markup-label:
 
 Стандартный синтаксис разметки reStructuredText
 ===============================================
