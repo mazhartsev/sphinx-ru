@@ -16,7 +16,7 @@
 
 :Автор: Дмитрий Мажарцев
 
-:Контакты: DmitryBowie@gmail.com
+:Контакты: deemonizer@gmail.com
 
 :Блог:  http://libreoffice.blogspot.ru
 
