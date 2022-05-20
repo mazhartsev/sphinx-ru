@@ -1,3 +1,5 @@
+.. meta::
+   :http-equiv=Content-Type: text/html; charset=utf-8
 
 .. _rtd-gh-chapter:
 

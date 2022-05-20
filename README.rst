@@ -4,7 +4,7 @@
 
 В руководстве подробно описан процесс генерации документации с помощью связки reStructuredText, Python Sphinx, GitHub и сервиса Read the Docs.
 
-Руководство находится на https://sphinx-ru.readthedocs.org
+Руководство находится на https://sphinx-ru.readthedocs.io/ru/latest/
 
 
 Авторские права

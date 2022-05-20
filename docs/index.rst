@@ -28,6 +28,6 @@
    faq
    agreements
    win-sphinx
-
+   community
    
 * :ref:`genindex`

@@ -1,3 +1,6 @@
+.. meta::
+   :http-equiv=Content-Type: text/html; charset=utf-8
+
 Русскоязычное сообщество LibreOffice
 ====================================
 
@@ -6,7 +9,6 @@
 Новости
 -------
 
-* Сообщество в Google Plus: https://plus.google.com/communities/114023476906934509704
 * Группа ВКонтакте: http://vk.com/libreoffice
 * Твиттер: http://twitter.com/LibreOffice_ru
 * Facebook: https://www.facebook.com/ru.libreoffice.org
